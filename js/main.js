@@ -47,7 +47,7 @@ $(window).on("popstate", function(event) {
     } else {
       $("#cdl_heading").show();
     }
-  };
+  }
 });
 
 $(window).on("orientationchange", function(event) {
@@ -79,12 +79,12 @@ Zepto(function($) {
     "#arrow_hover":    "images/arrow-hover.png",
     "#green_gradient": "images/green-gradient.png",
     "#alexef_pic":     "images/alexef.png"
-  }
+  };
   for (var img_id in all_images) {
     $(img_id).attr("src", all_images[img_id]);
   }
 
-  var iframe_url = "http://www.google.com/calendar/embed?src=apve67v2o1l4tp1655sl53nhs8%40group.calendar.google.com&ctz=Europe/Bucharest&bgcolor=%23F3F3F3"
+  var iframe_url = "http://www.google.com/calendar/embed?src=apve67v2o1l4tp1655sl53nhs8%40group.calendar.google.com&ctz=Europe/Bucharest&bgcolor=%23F3F3F3";
   $("#calendar_iframe").attr("src", iframe_url);
 });
 
