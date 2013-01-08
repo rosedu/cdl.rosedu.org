@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>CDL</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/fontface.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="row-fluid">
+
+      <div class="span3" id="menu_wrapper">
+        <!-- We use JavaScript to load images after all the text has been loaded/displayed, hence the use of src="images/transparent.png" below -->
+        <h2 id="menu_header"><img id="cdl_logo" src="images/transparent.png" style="max-width: 100%;"></h2>
+        <div id="menu">
+          <ul style="font-family: 'OpenSansRegular';">
+            <li class="cdlmenuitem" id="#acasa">        <a href="#acasa">Acasă</a>               </li>
+            <li>
+              <a href="http://cdl.rosedu.org/blog/" target="_blank">Blog</a>
+            </li>
+            <li class="cdlmenuitem" id="#cursanti">     <a href="#cursanti">Cursanți</a>         </li>
+            <li class="cdlmenuitem" id="#cursuri">      <a href="#cursuri">Cursuri</a>           </li>
+            <li class="cdlmenuitem" id="#calendar">     <a href="#calendar">Calendar</a>         </li>
+            <li class="cdlmenuitem" id="#proiecte">     <a href="#proiecte">Proiecte</a>         </li>
+            <li class="cdlmenuitem" id="#organizatori"> <a href="#organizatori">Organizatori</a> </li>
+            <li class="cdlmenuitem" id="#sponsori">     <a href="#sponsori">Sponsori</a>         </li>
+            <li class="cdlmenuitem" id="#english">      <a href="#english">English</a>           </li>
+          </ul>
+        </div> <!-- id="menu" -->
+      </div> <!-- id="menu_wrapper" -->
+
+      <div class="main span8 offset1">
+        <h2 id="cdl_heading" style="margin-bottom: 20px;">Cursul de Dezvoltare Liberă v6</h2>
+        <span id="top_of_content"></span>
+        <div id="acasa_content" class="visualstate">
+          <h3>Ce este CDL?</h3>
+          <p><strong>Cursul de dezvoltare liberă</strong> este un curs/laborator alternativ, cu o durată de 8 - 9 săptămâni, pentru studenții din Universitatea Politehnica din București despre dezvoltarea de software liber, despre unelte utile și despre ce înseamnă o comunitate open source.</p>
+          <p>În urma succesului cursului de anii trecuți ne bucurăm să vă anunţăm că anul acesta va avea loc cea de-a șasea ediţie a cursului, iar componenţa cursului va fi asemănătoare celei de anul trecut.</p>
+          <p>Aflați mai multe în <a href="http://blog.cs.pub.ro/2011/12/cdl-v4-0/" target="_blank">acest blog post</a>. :)</p>
+          <p>
+            <button class="btn greybutton cdlmenuitem" id="#inscriere">
+              <strong>Înscriere</strong>
+            </button>
+          </p>
+          <p>
+            <button class="btn greybutton cdlmenuitem" id="#calendar">
+              <strong>Calendar</strong>
+            </button>
+          </p>
+          <p class="extra_buttons">
+            <button class="btn greybutton cdlmenuitem" id="#cursuri">
+              <strong>Cursuri</strong>
+            </button>
+          </p>
+          <p class="extra_buttons">
+            <button class="btn greybutton cdlmenuitem" id="#proiecte">
+              <strong>Proiecte</strong>
+            </button>
+          </p>
+          <p class="extra_buttons">
+            <button class="btn greybutton cdlmenuitem" id="#organizatori">
+              <strong>Contact</strong>
+            </button>
+          </p>
+          <p class="extra_buttons">
+            <button class="btn greybutton cdlmenuitem" id="#sponsori">
+              <strong>Sponsori</strong>
+            </button>
+          </p>
+          <p>
+            <strong>Alte ediţii:</strong> <a href="http://cdl.rosedu.org/2011-fall/" target="_blank">2011 toamna</a>, <a href="http://cdl.rosedu.org/2011/" target="_blank">2011 primăvara</a>, <a href="http://cdl.rosedu.org/2010/" target="_blank">2010</a>, <a href="http://cdl.rosedu.org/2009/" target="_blank">2009</a>.
+          </p>
+          <p>Urmărește ultimele noutăți despre CDL pe <a href="https://www.facebook.com/rosedu.org" target="_blank">Facebook</a>, <a href="https://plus.google.com/114233516141809762907/" target="_blank">Google+</a> și <a href="https://twitter.com/rosedu_org" target="_blank">Twitter</a>.</p>
+          <p><em>Notă:</em> Cursul nu intră în programa școlară și nu aduce credite în plus.</p>
+        </div> <!-- id="acasa_content" -->
+
+        <div id="cursanti_content" class="visualstate">
+          <h3>Cursanți CDL</h3>
+          <table class="table table-striped">
+            <tbody>
+              <tr>
+                <th>Nume</th>
+                <th>Grupa</th>
+                <th>Proiect</th>
+              </tr>
+              <tr>
+                <td>Flavius Anton</td>
+                <td>314cb</td>
+                <td>pidgin</td>
+              </tr>
+              <tr>
+                <td>Dragoș Badea</td>
+                <td>313ca</td>
+                <td>WoUSO</td>
+              </tr>
+              <tr>
+                <td>Adrian Bogatu</td>
+                <td>315ca</td>
+                <td>pidgin</td>
+              </tr>
+              <tr>
+                <td>Vladimir Cernov</td>
+                <td>323cc</td>
+                <td>openSIPS</td>
+              </tr>
+              <tr>
+                <td>Andrei Datcu</td>
+                <td>315cc</td>
+                <td>digikam</td>
+              </tr>
+              <tr>
+                <td>Cosmin Dragomir</td>
+                <td>311ca</td>
+                <td>pidgin</td>
+              </tr>
+              <tr>
+                <td>Alexandru Fărcășanu</td>
+                <td>314ca</td>
+                <td>dexonline</td>
+              </tr>
+              <tr>
+                <td>Octavian Nastasie</td>
+                <td>314cb</td>
+                <td>dexonline</td>
+              </tr>
+              <tr>
+                <td>Adrian Nițu</td>
+                <td>315ca</td>
+                <td>digikam</td>
+              </tr>
+              <tr>
+                <td>Szabolcs Orban</td>
+                <td>311cc</td>
+                <td>openSIPS</td>
+              </tr>
+              <tr>
+                <td>Paul Săpunaru</td>
+                <td>323cc</td>
+                <td>WoUSO</td>
+              </tr>
+              <tr>
+                <td>Bogdan Stoian</td>
+                <td>315cc</td>
+                <td>openSIPS</td>
+              </tr>
+              <tr>
+                <td>Mihai Zamfirescu</td>
+                <td>314ca</td>
+                <td>WoUSO</td>
+              </tr>
+            </tbody>
+          </table>
+          <p>Vă mulțumim tuturor pentru interesul acordat Cursului de Dezvoltare Liberă. Fiecare aplicant, inclusiv cei care nu au fost acceptați, va primi un feedback detaliat în curând, feedback ce sperăm să vă ajute la următoarele aplicații.</p>
+        </div> <!-- id="cursanti_content" -->
+
+        <div class="visualstate" id="cursuri_content">
+          <h3>Curs 1</h3>
+          <ul>
+            <li>Introducere</li>
+            <li>Project Management / Redmine</li>
+            <li>Despre GSoC</li>
+            <li>Proiecte</li>
+          </ul>
+          <a href="#curs_1_detalii" class="cdlmenuitem" id="#curs_1_detalii">Detalii</a>
+          <h3>Curs 2</h3>
+          <ul>
+            <li>Editare (Vim)</li>
+            <li>Versionare (Git)</li>
+          </ul>
+          <a href="#curs_2_detalii" class="cdlmenuitem" id="#curs_2_detalii">Detalii</a>
+          <h3>Curs 3</h3>
+          <ul>
+            <li>Code readability</li>
+            <li>Python</li>
+          </ul>
+          <a href="#curs_3_detalii" class="cdlmenuitem" id="#curs_3_detalii">Detalii</a>
+          <h3>Curs 4</h3>
+          <ul>
+            <li>Graphical User Interfaces (Gtk)</li>
+          </ul>
+          <a href="#curs_4_detalii" class="cdlmenuitem" id="#curs_4_detalii">Detalii</a>
+          <h3>Curs 5</h3>
+          <ul>
+            <li>Object Oriented Programming</li>
+            <li>Design Patterns</li>
+          </ul>
+          <a href="#curs_5_detalii" class="cdlmenuitem" id="#curs_5_detalii">Detalii</a>
+          <h3>Curs 6</h3>
+          <ul>
+            <li>###</li>
+            <li>###</li>
+          </ul>
+          <a href="#curs_6_detalii" class="cdlmenuitem" id="#curs_6_detalii">Detalii</a>
+          <h3>Curs 7</h3>
+          <ul>
+            <li>###</li>
+            <li>###</li>
+          </ul>
+          <a href="#curs_7_detalii" class="cdlmenuitem" id="#curs_7_detalii">Detalii</a>
+          <h3>Curs 8</h3>
+          <ul>
+            <li>###</li>
+            <li>###</li>
+          </ul>
+          <a href="#curs_8_detalii" class="cdlmenuitem" id="#curs_8_detalii">Detalii</a>
+        </div> <!-- id="cursuri_content" -->
+
+        <div class="visualstate" id="calendar_content">
+          <h3>Calendar</h3>
+          <!-- We use JavaScript to load the iframe after all the text has been loaded/displayed, hence the use of src="" below -->
+          <iframe id="calendar_iframe" src="" style="border: 0;" width="100%" height="500" frameborder="0" scrolling="no"></iframe>
+        </div> <!-- id="calendar_content" -->
+
+        <div class="visualstate" id="proiecte_content">
+          <h3>Proiecte</h3>
+          <p>Dacă ești unul dintre studenții înscriși la ediția de anul acesta a Cursului de Dezvoltare Liberă, te invităm să afli mai multe despre proiectele la care ai putea să lucrezi semestrul acesta!</p>
+          <p>
+            <a href="#project_pidgin" class="cdlmenuitem" id="#project_pidgin">Pidgin</a>
+          </p>
+          <p>
+            <a href="#project_opensips" class="cdlmenuitem" id="#project_opensips">OpenSIPS</a>
+          </p>
+          <p>
+            <a href="#project_digikam" class="cdlmenuitem" id="#project_digikam">digiKam</a>
+          </p>
+          <p>
+            <a href="#project_dexonline" class="cdlmenuitem" id="#project_dexonline">DexOnline</a>
+          </p>
+          <p>
+            <a href="#project_awouso" class="cdlmenuitem" id="#project_awouso">WoUSO on Android</a>
+          </p>
+          <p>More details to come, stay tuned.</p>
+        </div> <!-- id="proiecte_content" -->
+
+        <div class="visualstate" id="organizatori_content">
+          <h3>Contact</h3>
+          <p>Ne găsiți pe canalul de IRC #rosedu pe Freenode sau ne puteți trimite un mail la <a href="mailto:cdl@rosedu.org">cdl@rosedu.org</a>.</p>
+          <h3>Organizatori și organizare</h3>
+          <p><strong>Cursul de Dezvoltare Liberă</strong> (în engleză Community & Development Lab) vă este adus de <a href="http://www.rosedu.org/" target="_blank">Echipa ROSEdu</a>.</p>
+          <h3>Credits</h3>
+          <p>(în ordine alfabetică):
+          <br>
+          Mihai Bărbulescu, Mihai Bivol, Ștefan Bucur, Victor Cărbune, Răzvan Crainea, Răzvan Deaconescu, Mihnea Dobrescu-Balaur, Vlad Dogaru, <a href="#organizer_alexef" class="cdlmenuitem" id="#organizer_alexef">Alex Eftimie</a>, Andrada Georgescu, Bogdan-Andrei Iancu, <a href="#organizer_alexj" class="cdlmenuitem" id="#organizer_alexj">Alex Juncu</a>, <a href="#organizer_tinamanea" class="cdlmenuitem" id="#organizer_tinamanea">Valentina Manea</a>, <a href="#organizer_mmaruseac" class="cdlmenuitem" id="#organizer_mmaruseac">Mihai Maruseac</a>, <a href="#organizer_alexm" class="cdlmenuitem" id="#organizer_alexm">Alex Morega</a>, Mariana Mărășoiu, Veaceslav Munteanu, <a href="#organizer_andreip" class="cdlmenuitem" id="#organizer_andreip">Andrei Petre</a>, Irina Preșa, <a href="#organizer_adrian_sc" class="cdlmenuitem" id="#organizer_adrian_sc">Adrian Scoică</a>, Adrian Radu, Ionuț Radu, Sorina Sandu, Laura Vasilescu, Alina Vlăduțu și prietenii.</p>
+        </div> <!-- id="organizatori_content" -->
+
+        <div class="visualstate" id="sponsori_content">
+          <h3>CDL este sponsorizat de:</h3>
+          <h3>Ixia</h3>
+          <!-- We use JavaScript to load images after all the text has been loaded/displayed, hence the use of src="" below -->
+          <p><a href="http://www.ixiacom.com/" target="_blank"><img id="ixia_logo" src=""></a></p>
+          <h3>Eau de Web</h3>
+          <p><a href="http://www.eaudeweb.ro/" target="_blank"><img id="eaudeweb_logo" src=""></a></p>
+          <h3>Google</h3>
+          <p><a href="http://www.google.ro/" target="_blank"><img id="google_logo" src=""></a></p>
+          <p><strong>Google Engineering internship</strong> opportunities are full-time positions and take place year-round. We accept students from multiple disciplines – including CS, EE, Maths, Physics – so students studying a variety of subjects are encouraged to apply. Google internships start and end dates are flexible with regard to academic schedules, but you’ll be expected to commit to at least three months of full-time work. We want to make sure we provide you a valuable learning experience and a deeper understanding of Google’s work environment, culture, and delicious food.</p>
+          <p><a href="http://www.google.com/intl/en/jobs/students/tech/" target="_blank">http://www.google.com/intl/en/jobs/students/tech/</a></p>
+          <p>Europe: <a href="http://www.google.com/intl/en/jobs/students/tech/internships/emea/" target="_blank">http://www.google.com/intl/en/jobs/students/tech/internships/emea/</a></p>
+          <p>US: <a href="http://www.google.com/intl/en/jobs/students/tech/internships/uscanada/" target="_blank">http://www.google.com/intl/en/jobs/students/tech/internships/uscanada/</a></p>
+          <p>We review applications on an ongoing basis; as projects are allocated to successful candidates soon after we interview them, to maximize your chances of success we encourage you to <strong>apply as early as possible in the academic year</strong>.</p>
+        </div> <!-- id="sponsori_content" -->
+
+        <div class="visualstate" id="english_content">
+          <h3>What is CDL all about?</h3>
+          <p>The free Open Source <strong>Community and Development Lab</strong> is a course organized by <a href="http://www.rosedu.org/" target="_blank">ROSEdu</a> at <a href="http://www.pub.ro/" target="_blank">Politehnica University of Bucharest</a>.</p>
+          <!-- We use JavaScript to load images after all the text has been loaded/displayed, hence the use of src="" below -->
+          <p><img id="english_logo" src="" style="float: left;">Currently, at its 5th edition, the course aims to help enthusiast undergraduate students at Politehnica University of Bucharest to make their first contributions within an open source project and to get a feeling of what real world software development actually means.
+          <br>
+          The topics covered by this course range from programming language specifics (such as C++/Python/Java/PHP), highlighting object oriented programming concepts and design patterns, to proper project management tools and community integration.</p>
+          <p style="clear: both;">
+          <br>
+          <br>
+          The main components of our course are:</p>
+          <ul>
+            <li><em>Theoretical presentations</em> combined with <em>practical laboratories</em> to help students gain technical expertise using various programming languages and open source tools</li>
+            <li><em>Development sessions</em> under the guidance of experienced mentors to help students work on specific features of an open source project</li>
+            <li><em>Presentations</em> held by invited guests, industry leaders of the Romanian IT community with various topics (careers in software engineering, startups, technology).</li>
+          </ul>
+          <h3>CDL v4.0</h3>
+          <p>The 4th edition of the Open Source Development Course is over!<br>After 9 weeks of hard work, commitment and enthusiasm on behalf of both the participants and the mentors, it is safe to say that this was a truly successful edition of the course!</p>
+          <p>The outcome was, undoubtedly, remarkable! At the end of the course each team put forward new functionalities that were implemented as patches to the main projects, and that made it back into the mainstream.</p>
+          <p>And because we are not the only ones to believe in the importance of this course, this year Eau de Web, Google and IXIA contributed by rewarding the participants with prizes!</p>
+          <p>Eau de Web offered books on Open Source and development to each student while IXIA offered a trip to Busteni for the participants and the organizers. Thank you!</p>
+          <h3>CDL v3.0</h3>
+          <p>The 3rd edition of the Open Source Development Course is over!<br>After 9 weeks of hard work, commitment and enthusiasm on behalf of both the participants and the mentors, it is safe to say that this was a truly successful edition of the course!</p>
+          <p>The outcome was, undoubtedly, remarkable! At the end of the course each team put forward new functionalities that were implemented as patches to the main projects, and that made it back into the mainstream.</p>
+          <p>And because we are not the only ones to believe in the importance of this course, this year Google and IXIA contributed by rewarding the participants with prizes!</p>
+          <p>We especially received support from the IXIA company: a trip to Busteni for the participants and the organizers! In addition to that, we owe the facilities in the laboratory where the CDL takes place exclusively to the effort and implication IXIA has demonstrated within the faculty and within ROSEdu! Thank you!</p>
+          <h3>Projects</h3>
+          <p>Throughout this course, each student is assigned to work on an open source project, under the guidance of a mentor actively involved in the development and in the community of the project. We aim to bring new contributors to existing open source/free software projects.</p>
+          <p>We consider this an immense opportunity for our participants, as they can easily overcome difficulties encountered when setting up the working environment (compiling the code, getting to know how it is organized and so on). Moreover, the mentors assist the development sessions within the course, are able to directly answer technical questions and plan the feature evolution, step by step.</p>
+          <p>Last, but not least, we would like to say a big THANK YOU to all the mentors who have dedicated numerous hours of their precious time for the benefit of the participants and the success of this course.</p>
+          <h3>Testimonials</h3>
+          <p>Results are best measured in time, and we are delighted to hear success stories from our former participants in the software engineering field, where knowledge gained through this course has proven to be vital.</p>
+          <p style="clear: both;">
+            <blockquote><em>"Through the course, I have learned not only essential technical aspects, but new ways of looking at things"</em></blockquote>
+            <div style="float: right; margin-bottom: 5px">Mihai Tabără, CDL 2009</div>
+          </p>
+          <p style="clear: both;">
+            <blockquote><em>"I participated in my first year as a student and in my second as a mentor. This proves how you can personally evolve through the CDL course. The experience gained through CDL helped me get involved in important open source projects, such as Google Summer of Code."</em></blockquote>
+            <div style="float: right; margin-bottom: 5px">Vlad Voicu, CDL 2009 - 2011</div>
+          </p>
+          <p style="clear: both;">
+            <blockquote><em>"CDL represented for me a turning point. Until then, I had no idea about how an open source project works. It turned out that I was wrong in many ways: how I should contribute code, how I should work within a team, how I would present the project I’m working on..."</em></blockquote>
+            <div style="float: right; margin-bottom: 5px">Dan-George Filimon, CDL 2010 - 2011</div>
+          </p>
+          <p style="clear: both;">
+            <blockquote><em>"CDL has opened the doors for me to the open-source world. During this course, I learned a lot about different tools and practices that are mostly used in open-source projects, which made me a better programmer. It has also helped me a lot during my Google Summer of Code project in 2010. I am always up-to-date with the evolution of this course and I can say that the team is improving it every year. Congrats to everyone for helping new students learn the ways of open source development and Computer Science in general."</em></blockquote>
+            <div style="float: right; margin-bottom: 5px">Diana Tiriplică, CDL 2009</div>
+          </p>
+          <p style="clear: both;">
+            <blockquote><em>"I particularly enjoyed this course because I was able to gain knowledge in so many different fields of Computer Science."</em></blockquote>
+            <div style="float: right; margin-bottom: 25px;">Mircea-Ștefan Ghideu, CDL 2010</div>
+          </p>
+          <h3 style="clear: both;">Get involved!</h3>
+          <p>We have currently limited our students contributions to communities and projects where we are able to find mentors from our university, to physically be present during the weekend hackatons within the course. This helps a lot ensuring quality for our freshman students, the target audience for CDL, since they can be easily guided on writing code efficiently for the features they are willing to work on.
+          <br>
+          However, our upcoming project is ROSEdu Summer of Code, inspired from Google's Summer of Code and sponsored (with a smaller remuneration) by our University. It has a slightly different target and stands as mandatory curricular practice for some of our university students, interested in working within an open source project. Particularly, this is a very good opportunity to attract new contributors to your project! Write us, at cdl@rosedu.org, if you are interested.</p>
+        </div> <!-- id="english_content" -->
+
+        <div class="visualstate" id="inscriere_content">
+          <h3>Înscriere</h3>
+          <p>Trimite un mail la <a href="mailto:cdl-inscrieri@rosedu.org">cdl-inscrieri@rosedu.org</a> până miercuri, 15 februarie 2012, ora 23:59, care să cuprindă următoarele:</p>
+          <ul>
+            <li>numele, prenumele, anul, seria și grupa</li>
+            <li>adresa de mail și numărul de telefon (pentru a te putea contacta)</li>
+            <li>un fișier text în care să ne vorbiți despre voi: de ce vreți să vă treziți în fiecare sâmbătă dimineața pentru a veni în facultate, la CDL și ce așteptări aveți de la acest curs, ce experiență aveți (dacă aveți), dacă ați mai lucrat sau nu în echipă (nu neapărat programare), cu ce limbaje de programare sunteți familiari, ce v-ar plăcea să învățați în urma acestui curs etc.</li>
+            <li>rezolvarea <strong>unei probleme (care vreți voi, dar numai una)</strong>, dintre cele de mai jos; Problema poate fi rezolvată în ce limbaj de programare doriți. Apreciem un cod curat și eficient, care aderă la un coding style acceptat.
+              <br>
+              <br>
+              <a href="#inscriere_pb1" class="cdlmenuitem" id="#inscriere_pb1">Problema 1</a>
+              <br>
+              <br>
+              <a href="#inscriere_pb2" class="cdlmenuitem" id="#inscriere_pb2">Problema 2</a>
+              <br>
+              <br>
+              <a href="#inscriere_pb3" class="cdlmenuitem" id="#inscriere_pb3">Problema 3</a>
+              <br>
+              <br>
+              <a href="#inscriere_pb4" class="cdlmenuitem" id="#inscriere_pb4">Problema 4</a>
+              <br>
+              <br>
+              <a href="#inscriere_pb5" class="cdlmenuitem" id="#inscriere_pb5">Problema 5</a>
+            </li>
+          </ul>
+          <p>
+          <br>
+          Trebuie trimisă o arhivă .zip care să conțină codul sursă, un makefile pentru compilare, un fișier text (readme) în care să explicați soluția și fișierul text cu descrierea personală.
+          <br>
+          <em>Exemplu</em>: dacă vă numiți Titi Gheorghiță, mailul vostru trebuie să aibă atașat fișierul Titi_Gheorghita.zip</p>
+          <p><strong>Bonus!</strong> Dacă crezi că cineva poate să ne povestească ceva despre tine, contactează-l si dă-ne adresa de e-mail/nr de telefon al lui. Noi îl vom contacta pentru a afla mai multe.</p>
+          <p>Pentru a te putea pregăti pentru interviu, îți propunem <a href="https://projects.rosedu.org/projects/cdl-2011-toamna/wiki/Probleme_model" target="_blank">o listă de taskuri / probleme model de rezolvat</a>.</p>
+          <p>Dacă aveți orice nelămurire, puteți să trimiteți oricând un mail, tot la <a href="mailto:cdl-inscrieri@rosedu.org">cdl-inscrieri@rosedu.org</a> sau pe canalul de IRC #rosedu pe Freenode.</p>
+        </div> <!-- id="inscriere_content" -->
+
+        <div class="visualstate" id="inscriere_pb1_content">
+          <h3>Problema 1: Bloom filter</h3>
+          <p>Implementați o bibliotecă/set de funcții pentru a lucra cu un bloom filter [1], împreună cu un set de teste relevante pentru aceasta.</p>
+          <p>[1]: <a href="http://en.wikipedia.org/wiki/Bloom_filter" target="_blank">http://en.wikipedia.org/wiki/Bloom_filter</a></p>
+        </div> <!-- id="inscriere_pb1_content" -->
+
+        <div class="visualstate" id="inscriere_pb2_content">
+          <h3>Problema 2: Liste circulare</h3>
+          <p>Scrieți o funcție care primește ca argument o listă circulară simplu înlănțuită sortată și un element nou și realizează inserția acestuia în listă păstrând ordinea.
+          <br>
+          Adăugați teste pentru funcția implementată.</p>
+        </div> <!-- id="inscriere_pb2_content" -->
+
+        <div class="visualstate" id="inscriere_pb3_content">
+          <h3>Problema 3</h3>
+          <p>Realizați un arhivator/dezarhivator folosind formatul tar[1].
+          <br>
+          [1] <a href="http://en.wikipedia.org/wiki/Tar_(file_format)" target="_blank">http://en.wikipedia.org/wiki/Tar_(file_format)</a></p>
+        </div> <!-- id="inscriere_pb3_content" -->
+
+        <div class="visualstate" id="inscriere_pb4_content">
+          <h3>Problema 4: Filtre imagini</h3>
+          <p>Implementați un program care primește în linia de comandă calea către o imagine în format JPG, aplică un filtru la alegere și o salvează într-un fișier cu sufix-ul “<strong>_blurred</strong>”.</p>
+          <p>Pentru manipularea imaginilor puteți folosi orice bibliotecă OS doriți (ex.: <em>libjpg</em>), dar precizați numele acesteia în README și eventualele particularități în utilizare.</p>
+          <p>Filtrele vor trebuie să fie implementate de voi. Puteți implementa și mai multe filtre și selecția acestora se va face printr-un parametru primit în linia de comandă.</p>
+          <p>Idei de filtre:</p>
+          <ul>
+            <li>Gaussian blur</li>
+            <li>edge detection</li>
+            <li>sharpen</li>
+            <li>invert</li>
+            <li>grayscale</li>
+            <li>median</li>
+          </ul>
+        </div> <!-- id="inscriere_pb4_content" -->
+
+        <div class="visualstate" id="inscriere_pb5_content">
+          <h3>Problema 5: Heap</h3>
+          <p>Implementați un program care implementează un <a href="http://en.wikipedia.org/wiki/Heap_(data_structure)" target="_blank">heap</a> ajustabil.</p>
+          <p>În fișierul <em>heap.in</em> veți avea pe prima linia un număr n și apoi o listă de n valori. După această listă, veți putea primi 3 tipuri de comenzi, scrise în fișier astfel:</p>
+          <ul>
+            <li>i 2 3 (va incrementa valoarea elementului 2 (din vectorul inițial) cu valoarea 3 și va ajusta heap-ul)</li>
+            <li>d 2 3 (va decrementa valoarea elementului 2 (din vectorul initial) cu valoarea 3 și va ajusta heap-ul)</li>
+            <li>a (va afișa structura actuală a heapulul).</li>
+          </ul>
+          <p>Fișierul <em>heap.in</em> este de forma:</p>
+<pre style="font-family: monospace; white-space: pre;">n
+v1 v2 v3 ... vn
+comandă_1
+comandă_2
+.........
+comandă_k</pre>
+        </div> <!-- id="inscriere_pb5_content" -->
+
+        <div class="visualstate" id="drepturi_content">
+          <h3>Condiții și drepturi de folosire</h3>
+          <p>ROSEdu deține drepturile asupra întregului conținut al acestui sait.</p>
+          <p>ROSEdu, în calitate de deținător al drepturilor de autor, eliberează conținutul acestui sait sub licența <a href="http://www.gnu.org/licenses/fdl-1.2.html" target="_blank">GNU Free Documentation License v1.2</a>. În acest sens, accesul, distribuția și modificarea conținutului sunt libere, cu condiția păstrării autorilor inițiali. Se recomandă folosirea sintagmei "Documentație originală scrisă de membrii asociației studențești ROSEdu".</p>
+          <p>Pentru informații suplimentare, te așteptăm pe <a href="http://lists.rosedu.org/listinfo/rosedu-general" target="_blank">lista generală a ROSEdu</a> sau pe <a href="irc://irc.freenode.net"> canalul IRC #rosedu</a>.</p>
+          <p>Vă mulțumim!</p>
+        </div> <!-- id="drepturi_content" -->
+
+        <div class="visualstate" id="curs_1_detalii_content">
+          <h3>Cursul 1</h3>
+          <br>
+          <h4>Project Management / Redmine</h4>
+          <ul>
+            <li>Autor: Răzvan Deaconescu</li>
+            <li>Prezentare: <a href="http://cdl.rosedu.org/2012/store/slides/curs1_redmine.pdf" target="_blank">pdf</a></li>
+          </ul>
+          <br>
+          <h4>Despre GSoC</h4>
+          <ul>
+            <li>Autor: Mihai Bivol</li>
+            <li>Prezentare: <a href="http://cdl.rosedu.org/2012/store/slides/curs1_gsoc.pdf" target="_blank">pdf</a></li>
+          </ul>
+        </div> <!-- id="curs_1_detalii_content" -->
+
+        <div class="visualstate" id="curs_2_detalii_content">
+          <h3>Cursul 2</h3>
+          <br>
+          <h4>###</h4>
+          <ul>
+            <li>Autor: _</li>
+            <li>Prezentare: <a href="http://cdl.rosedu.org/2012/store/slides/curs_.pdf" target="_blank">pdf</a></li>
+          </ul>
+          <br>
+          <h4>###</h4>
+          <ul>
+            <li>Autor: _</li>
+            <li>Prezentare: <a href="http://cdl.rosedu.org/2012/store/slides/curs_.pdf" target="_blank">pdf</a></li>
+          </ul>
+        </div> <!-- id="curs_2_detalii_content" -->
+
+        <div class="visualstate" id="curs_3_detalii_content">
+          <h3>Cursul 3</h3>
+          <br>
+          <h4>###</h4>
+          <ul>
+            <li>Autor: _</li>
+            <li>Prezentare: <a href="http://cdl.rosedu.org/2012/store/slides/curs_.pdf" target="_blank">pdf</a></li>
+          </ul>
+          <br>
+          <h4>###</h4>
+          <ul>
+            <li>Autor: _</li>
+            <li>Prezentare: <a href="http://cdl.rosedu.org/2012/store/slides/curs_.pdf" target="_blank">pdf</a></li>
+          </ul>
+        </div> <!-- id="curs_3_detalii_content" -->
+
+        <div class="visualstate" id="curs_4_detalii_content">
+          <h3>Cursul 4</h3>
+          <br>
+          <h4>###</h4>
+          <ul>
+            <li>Autor: _</li>
+            <li>Prezentare: <a href="http://cdl.rosedu.org/2012/store/slides/curs_.pdf" target="_blank">pdf</a></li>
+          </ul>
+          <br>
+          <h4>###</h4>
+          <ul>
+            <li>Autor: _</li>
+            <li>Prezentare: <a href="http://cdl.rosedu.org/2012/store/slides/curs_.pdf" target="_blank">pdf</a></li>
+          </ul>
+        </div> <!-- id="curs_4_detalii_content" -->
+
+        <div class="visualstate" id="curs_5_detalii_content">
+          <h3>Cursul 5</h3>
+          <br>
+          <h4>###</h4>
+          <ul>
+            <li>Autor: _</li>
+            <li>Prezentare: <a href="http://cdl.rosedu.org/2012/store/slides/curs_.pdf" target="_blank">pdf</a></li>
+          </ul>
+          <br>
+          <h4>###</h4>
+          <ul>
+            <li>Autor: _</li>
+            <li>Prezentare: <a href="http://cdl.rosedu.org/2012/store/slides/curs_.pdf" target="_blank">pdf</a></li>
+          </ul>
+        </div> <!-- id="curs_5_detalii_content" -->
+
+        <div class="visualstate" id="curs_6_detalii_content">
+          <h3>Cursul 6</h3>
+          <br>
+          <h4>###</h4>
+          <ul>
+            <li>Autor: _</li>
+            <li>Prezentare: <a href="http://cdl.rosedu.org/2012/store/slides/curs_.pdf" target="_blank">pdf</a></li>
+          </ul>
+          <br>
+          <h4>###</h4>
+          <ul>
+            <li>Autor: _</li>
+            <li>Prezentare: <a href="http://cdl.rosedu.org/2012/store/slides/curs_.pdf" target="_blank">pdf</a></li>
+          </ul>
+        </div> <!-- id="curs_6_detalii_content" -->
+
+        <div class="visualstate" id="curs_7_detalii_content">
+          <h3>Cursul 7</h3>
+          <br>
+          <h4>###</h4>
+          <ul>
+            <li>Autor: _</li>
+            <li>Prezentare: <a href="http://cdl.rosedu.org/2012/store/slides/curs_.pdf" target="_blank">pdf</a></li>
+          </ul>
+          <br>
+          <h4>###</h4>
+          <ul>
+            <li>Autor: _</li>
+            <li>Prezentare: <a href="http://cdl.rosedu.org/2012/store/slides/curs_.pdf" target="_blank">pdf</a></li>
+          </ul>
+        </div> <!-- id="curs_7_detalii_content" -->
+
+        <div class="visualstate" id="curs_8_detalii_content">
+          <h3>Cursul 8</h3>
+          <br>
+          <h4>###</h4>
+          <ul>
+            <li>Autor: _</li>
+            <li>Prezentare: <a href="http://cdl.rosedu.org/2012/store/slides/curs_.pdf" target="_blank">pdf</a></li>
+          </ul>
+          <br>
+          <h4>###</h4>
+          <ul>
+            <li>Autor: _</li>
+            <li>Prezentare: <a href="http://cdl.rosedu.org/2012/store/slides/curs_.pdf" target="_blank">pdf</a></li>
+          </ul>
+        </div> <!-- id="curs_8_detalii_content" -->
+
+        <div class="visualstate" id="project_pidgin_content">
+          <h3>Proiect CDL: Pidgin</h3>
+          <ul>
+            <li><strong>URL</strong>: <a href="http://pidgin.im/" target="_blank">http://pidgin.im/</a></li>
+            <li><strong>Development</strong>: <a href="https://github.com/rosedu/Pidgin" target="_blank">https://github.com/rosedu/Pidgin</a></li>
+          </ul>
+          <h3>Descriere</h3>
+          <p>Pidgin este o aplicaţie de instant messaging ce suportă o varietate de protocoale de acest tip și permite utilizatorului să acceseze conturi din reţele diferite (Yahoo!, GoogleTalk, MSN, Aim etc.) din interiorul aceleiași instanţe. Cu un număr de utilizatori estimat la 3 milioane, Pidgin este unul dintre clienţii de IM favoriţi din mediul Unix/Linux.
+          <br>
+          Pidgin este, de fapt, un frontend GTK+ pentru biblioteca libpurple. Așadar, când se scrie cod pentru client se modifică interfaţa cu această bibliotecă. Se dorește atât rezolvarea unor probleme deja existente cât și implementarea de noi feature-uri.
+          <br>
+          Proiectul CDL urmărește rezolvarea unui set de buguri precum si implementarea unor features cool, în limita timpului disponibil. Se va lucra într-o echipă de 3-5 studenți (posibil să se schimbe numărul, vom anunța la primul curs).</p>
+          <h3>Lista buguri</h3>
+          <ul>
+            <li>### [5], [6]</li>
+            <li>### [4]</li>
+            <li>### [1]</li>
+            <li>### [3]</li>
+            <li>### [2]</li>
+          </ul>
+          <h3>Lista features</h3>
+          <ul>
+            <li>### [7]</li>
+            <li>### [8]</li>
+            <li>### [9]</li>
+            <li>### [4]</li>
+          </ul>
+          <h3>Link-uri descriere</h3>
+          <ul>
+            <li>[1]: <a href="http://developer.pidgin.im/wiki/FutureSOCProjects" target="_blank">http://developer.pidgin.im/wiki/FutureSOCProjects</a></li>
+            <li>[2]: <a href="#" target="_blank">###</a></li>
+            <li>[3]: <a href="#" target="_blank">###</a></li>
+            <li>[4]: <a href="#" target="_blank">###</a></li>
+            <li>[5]: <a href="#" target="_blank">###</a></li>
+            <li>[6]: <a href="#" target="_blank">###</a></li>
+            <li>[7]: <a href="#" target="_blank">###</a></li>
+            <li>[8]: <a href="#" target="_blank">###</a></li>
+            <li>[9]: <a href="#" target="_blank">###</a></li>
+          </ul>
+          <h3>Implementare curentă (dacă există)</h3>
+          <p>Proiectul este scris in C. Repository-ul oficial poate fi găsit <a href="http://developer.pidgin.im/wiki/UsingPidginMonotone" target="_blank">aici</a>. Când vom completa câte un task îl vom submite la ei pe tracker și se vor ocupa ei să-l integreze în Monotone.
+            <br>
+            Instrucțiuni pentru a compila Pidgin din surse sunt <a href="http://developer.pidgin.im/wiki/Installing%20Pidgin#Compiling" target="_blank">aici</a>.</p>
+          <h3>Este necesar să</h3>
+          <p>Vreți să contribuiți și să vreți să învățați să folosiți următoarele tehnologii:</p>
+          <ul>
+            <li>C</li>
+            <li>GTK (3.0)</li>
+          </ul>
+          <h3>Parcurgeți</h3>
+          <p>Recomandăm să citiți/parcurgeți următoarele:</p>
+          <ul>
+            <li>
+              <a href="http://developer.pidgin.im/wiki/CHowTo" target="_blank">http://developer.pidgin.im/wiki/CHowTo</a>
+            </li>
+            <li>
+              <a href="http://developer.gnome.org/platform-overview/stable/gtk" target="_blank">http://developer.gnome.org/platform-overview/stable/gtk</a>
+              <br>
+              în special <a href="http://developer.gnome.org/gtk3/stable/gtk-migrating-2-to-3.html" target="_blank">http://developer.gnome.org/gtk3/stable/gtk-migrating-2-to-3.html</a>
+            </li>
+          </ul>
+          <h3>Responsabili</h3>
+          <ul>
+            <li><a href="#organizer_tinamanea" class="cdlmenuitem" id="#organizer_tinamanea">Valentina Manea</a></li>
+            <li><a href="#organizer_mmaruseac" class="cdlmenuitem" id="#organizer_mmaruseac">Mihai Maruseac</a></li>
+          </ul>
+        </div> <!-- id="project_pidgin_content" -->
+
+        <div class="visualstate" id="project_opensips_content">
+          <h3>Proiect CDL: OpenSIPS</h3>
+          <ul>
+            <li><strong>URL</strong>: <a href="http://www.opensips.org/" target="_blank">http://www.opensips.org/</a></li>
+            <li><strong>Development</strong>: <a href="http://sourceforge.net/projects/opensips" target="_blank">http://sourceforge.net/projects/opensips</a></li>
+          </ul>
+        </div> <!-- id="project_opensips_content" -->
+
+        <div class="visualstate" id="project_digikam_content">
+          <h3>Proiect CDL: DigiKam</h3>
+          <ul>
+            <li><strong>URL</strong>: <a href="http://digikam.org/" target="_blank">http://digikam.org/</a></li>
+            <li><strong>Development</strong>: <a href="http://www.digikam.org/drupal/download?q=download/GIT" target="_blank">http://www.digikam.org/drupal/download?q=download/GIT</a></li>
+          </ul>
+        </div> <!-- id="project_digikam_content" -->
+
+        <div class="visualstate" id="project_dexonline_content">
+          <h3>Proiect CDL: DEX online</h3>
+          <ul>
+            <li><strong>URL</strong>: <a href="http://dexonline.ro/" target="_blank">http://dexonline.ro/</a></li>
+            <li><strong>Development</strong>: <a href="http://wiki.dexonline.ro/" target="_blank">http://wiki.dexonline.ro/</a></li>
+          </ul>
+        </div> <!-- id="project_dexonline_content" -->
+
+        <div class="visualstate" id="project_awouso_content">
+          <h3>Proiect CDL: WoUSO on Android</h3>
+          <ul>
+            <li><strong>URL</strong>: <a href="http://wouso.rosedu.org/" target="_blank">http://wouso.rosedu.org/</a></li>
+          </ul>
+        </div> <!-- id="project_awouso_content" -->
+
+        <div class="visualstate" id="organizer_alexef_content">
+          <h3>Alex Eftimie</h3>
+          <!-- We use JavaScript to load images after all the text has been loaded/displayed, hence the use of src="" below -->
+          <p><img id="alexef_pic" src="" style="float: right; margin-left: 10px;"> Răspunde la cereri pe alex(at)rosedu(dot)org. Folosește și recomandă <a href="http://ubuntu.ro/">Ubuntu</a>. Îi place web-ul. Legendele spun că face widgets. Are și <a href="http://alex.eftimie.ro/" target="_blank">blog</a>, cheamă studenții la <a href="http://planet.cs.pub.ro/" target="_blank">planetă</a> - condiție: să scrie despre Counter Strike.</p>
+        </div> <!-- id="organizer_alexef_content" -->
+
+        <div class="visualstate" id="organizer_alexj_content">
+          <h3>Alex Juncu</h3>
+          <ul>
+            <li>Alexandru Juncu a.k.a. AJ or AlexJ</li>
+            <li>Student la Calculatoare, seria CA promoţia 2010</li>
+            <li>Născut în Bacău la 18 Decembrie 1986</li>
+            <li>Interese: Computer Science, Networking, Open Software</li>
+            <li>Ocupaţii în afara facultăţii: Instructor CCNA, Asistent Utilizarea Sistemelor de Operare, Alcoolic</li>
+            <li>Blog: <a href="http://alexj.info/" target="_blank">alexj.info: Computer Science Journal</a></li>
+          </ul>
+        </div> <!-- id="organizer_alexj_content" -->
+
+        <div class="visualstate" id="organizer_tinamanea_content">
+          <h3>Valentina Manea</h3>
+          <ul>
+            <li>băutoare convinsă de apă plată (cu sau fără lamâie) și, ocazional, de bere.</li>
+            <li>gamer semivindecat</li>
+            <li>a început să fie interesată de calculatoare de prin clasa a 7-a când cineva i-a povestit cum poţi folosi <code>netstat -b</code> pentru a afla IP-ul cuiva.</li>
+            <li>a urmat fascinaţia pentru reţele (perioada CCNA) și, tot prin clasa a 10-a, primul contact cu Linux.</li>
+            <li>... acum e prinsă între reţele și programare, cu accent de ceva timp pe ultima și este utilizator credincios de Linux (Arch).</li>
+            <li>last but not least: Pidgin lover!</li>
+            <li>to be continued</li>
+          </ul>
+        </div> <!-- id="organizer_tinamanea_content" -->
+
+        <div class="visualstate" id="organizer_mmaruseac_content">
+          <h3>Mihai Maruseac</h3>
+          <p>Warning: info is old, update is planned.</p>
+          <ul>
+            <li>Nume complet: Mihai Maruseac</li>
+            <li>Nume scurt: <strong>MM</strong></li>
+            <li>Alint rețea: <strong>mm</strong>, MM, Mithrandir, mmaruseacph2, mmaruseac, pilgrimgray, etc.</li>
+            <li>Aniversare: 15 ianuarie</li>
+            <li>Origine: Suceava, România</li>
+            <li>Interese: FOSS, AI, Linux, Calculatoare, Metode Numerice, Computers, programare, SF/Fantasy Literature, SO, Math, Python, OpenGL, Game Design, Arimaa, Game Programming, companii plăcute, discuții libere, Andromeda, etc.</li>
+            <li>Blog: <a href="http://pilgrimgray.wordpress.com/" target="_blank">pilgrimgray - blogul principal</a></li>
+            <li>Fav quote: <em>All that we have to decide is what we do with the time that is given to us</em></li>
+          </ul>
+        </div> <!-- id="organizer_mmaruseac_content" -->
+
+        <div class="visualstate" id="organizer_alexm_content">
+          <h3>Alex Morega</h3>
+          <p>Răspunde la mesaje pe adresa “alex”, după care un caracter “arond”, după care “grep” și terminația “ro”. Poate așa crawlerii de adrese de mail n-or să-l găsească. :)
+          <br>
+          E pythonist convins, la job face aplicații web, și are un piticuț pe creier care zice că neapărat codul trebuie scris curat.</p>
+        </div> <!-- id="organizer_alexm_content" -->
+
+        <div class="visualstate" id="organizer_andreip_content">
+          <h3>Andrei Petre</h3>
+          <ul>
+            <li>îmi place să aflu lucruri noi</li>
+            <li>interese: linux, programare, AI, bere, FOSS, android, python, respond_to?(:ruby), discuții interesante, algoritmi, plimbări în aer liber, șah ...</li>
+            <li>sper ca într-o zi să învăț și C++</li>
+            <li>un viitor blog probabil <a href="http://swarm.cs.pub.ro/~anpetre/" target="_blank">aici</a></li>
+            <li>contact la p31 andrei #at# gmail #dot# com</li>
+          </ul>
+        </div> <!-- id="organizer_andreip_content" -->
+
+        <div class="visualstate" id="organizer_adrian_sc_content">
+          <h3>Adrian Scoică</h3>
+          <p>Îi puteți scrie la adrian.sc #at# rosedu #dot# org. Îi plac algoritmica și limbajele formale, este fan convins <a href="http://www.cplusplus.com/" target="_blank">C++</a>, si în timpul liber citește despre lingvistică computațională și modelarea limbajului natural.
+          <br>
+          Acceptă orice fel de invitații la test drive-uri Mazda :)</p>
+        </div> <!-- id="organizer_adrian_sc_content" -->
+      </div> <!-- class="main span8 offset1" -->
+
+    </div> <!-- class="row-fluid" -->
+  </div> <!-- class="wrapper" -->
+
+  <div class="footer">
+    <ul>
+      <li>
+        <div>&copy; 2013 <a href="http://www.rosedu.org/" target="_blank">ROSEdu</a></div>
+        <div><a href="#drepturi" class="cdlmenuitem" id="#drepturi">Condiții și drepturi de folosire</a></div>
+        <div>
+		<!--<a href="https://cdl.rosedu.org/2012/?do=login" target="_blank">log in</a>
+		-->
+		</div>
+      </li>
+      <!-- We use JavaScript to load images after all the text has been loaded/displayed, hence the use of src="" below -->
+      <li style="float: right;"><a href="http://www.rosedu.org/" target="_blank"><img id="rosedu_logo" src="" width=200></a></li>
+    </ul>
+  </div> <!-- class="footer" -->
+  <div style="display: none;">
+    <img id="arrow_hover" src="">
+    <img id="green_gradient" src="">
+  </div>
+</body>
+</html>
+<script src="js/zepto.min.js"></script>
+<script src="js/main.js"></script>
+
