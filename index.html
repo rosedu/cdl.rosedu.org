@@ -144,6 +144,9 @@
             <a href="#project_whcide" class="cdlmenuitem" id="#project_whcide">WHC:IDE</a>
           </p>
           <p>
+            <a href="#project_firefox" class="cdlmenuitem" id="#project_firefox">Firefox Add-ons</a>
+          </p>
+          <p>
             <a href="#project_opensips" class="cdlmenuitem" id="#project_opensips">OpenSIPS</a>
           </p>
           <p>
@@ -482,7 +485,7 @@ comandă_k</pre>
 	   <a href="https://docs.google.com/drawings/d/1GszZbyVLKkmSqnvvJfnA5N0A1yIYNpLdkz5TkLwJwMo/edit" target="_blank">Model Grafic</a>
 
           </p>
-          <h3>Descriere Task-uri</h3>
+	  <h3>Descriere Task-uri</h3>
 	  <p> La moment WHC IDE este în proces de trecere la TDD(test driven development), deci se acceptă in repo doar teste, sau features+ teste. Pentru a vă familiariza cu codul, la început vor fi propuse câteva task-uri ușoare(10 min pentru mine, dar eu cunosc tot codul):</p>
           <ul>
             <li>[BUG] Execuția eșuează dacă folderul Execute nu este prezent in directoriul task-ului. De adaugat o verificare suplimentară a directoriului unde se scrie.</li>
@@ -530,23 +533,79 @@ comandă_k</pre>
 	    <li>În repo-ul de git este disponibil un .pro pentru QtCreator și un CMakeLists.txt pentru cmake.</li>
 	    <li>Aveți nevoie de un calculator cu un procesor dual-core(nu conteaza de ce tip)</li>
 	    <li>Pentru a fi eficienți, vă sfătuiesc să parcurgeți tutorialul Qt + să experimentați cu git înainte de începerea cursului. Cunoștințele de git vă vor ajuta la orice proiect open-source, nu doar la WHC IDE sau cele prezentate la acest curs.</li>
-	     <li>Pentru întrebări suplimentare nu ezitați să mă contactați Veaceslav Munteanu slavuttici at gmail punct com</li>
-			  
+	     <li>Pentru întrebări suplimentare nu ezitați să mă contactați Veaceslav Munteanu slavuttici at gmail punct com</li>	  
 	  </ul>
-
           <h3>Responsabili</h3>
           <ul>
             <li>Veaceslav Munteanu</li>
           </ul>
         </div> <!-- id="project_whcide_content" -->
 
-        <div class="visualstate" id="project_opensips_content">
-          <h3>Proiect CDL: OpenSIPS</h3>
+         <div class="visualstate" id="project_firefox_content">
+          <h3>Proiect CDL: Firefox Add-ons</h3>
           <ul>
-            <li><strong>URL</strong>: <a href="http://www.opensips.org/" target="_blank">http://www.opensips.org/</a></li>
-            <li><strong>Development</strong>: <a href="http://sourceforge.net/projects/opensips" target="_blank">http://sourceforge.net/projects/opensips</a></li>
+            <li><strong>Development</strong>:</li>
           </ul>
-        </div> <!-- id="project_opensips_content" -->
+
+          <h3>Descriere</h3>
+          <p>Dezvoltarea de add-ons pentru cel mai popular browser open source - 
+Mozilla Firefox. Utilizând noul SDK se pot crea extensii atât pentru platformele
+ desktop, cât și pentru cele mobile (Android). Asemenea browser-ului majoritatea
+ extensiilor sunt proiecte open source, cei interesați putând foarte ușor să contribuie
+ atât la extensiile existente cât și să dezvolte unele noi.
+          <br>
+          Popularitatea browserului Firefox se datorează în principiu acestor extensii. 
+ Oricine se poate alătura comunității de sute de dezvoltatori.
+          <br>
+          </p>
+	  
+          <h3>Tehnologii</h3>
+          <p>ADD-on SDK: <a href="https://addons.mozilla.org/en-US/developers/docs/sdk/latest/" target="_blank">https://addons.mozilla.org/en-US/developers/docs/sdk/latest/</a> </p>
+	  	
+          <h3>Cunoștințe necesare</h3>
+          <ul>
+ 	  		<li>JavaScript (cel puțin cunoștințe de bază despre JavaScript - dezvoltarea 
+se va face în JavaScript) </li>
+	  		<li>GHTML, DOM, parsare XML (necesare pentru parsare, aterare structură HTML)</li>
+	   		<li>CSS (nu obligatoriu)</li>
+			<li>module CommonJS (nu obligatoriu)</li>
+			<li>XUL și XPCOM (tehnologiile folosite pentru interfața grafică a browserului -
+se învață pe parcurs)</li>
+          </ul> 	
+
+          <h3>Resurse disponibile</h3>
+          <ul>
+	  		<li>Mozilla MDN - pentru orice informație despre Firefox și tehnologii web</li>
+			<li>XPCOM - <a href="https://developer.mozilla.org/en-US/docs/XPCOM" target="_blank">https://developer.mozilla.org/en-US/docs/XPCOM</a></li>
+			<li>Module CommonJS - <a href="http://www.commonjs.org/specs/modules/1.0/" target="_blank">http://www.commonjs.org/specs/modules/1.0/</a></li>
+			<li>Pentru codul sursă al extensiilor existente - <a href="http://www.commonjs.org/specs/modules/1.0/" target="_blank">http://www.commonjs.org/specs/modules/1.0/</a></li>
+			<li>Codul sursă al browserului, dacă este necesar<a href="http://mxr.mozilla.org/ " target="_blank">http://mxr.mozilla.org/</a></li>
+          </ul>
+
+          <h3>Despre proiecte</h3>
+          <p>Nivelul de cunoștințe necesare depinde foarte mult de complexitatea extensiei
+dezvoltate: de la JavaScript basic + HTML până la extensii ce necesită comunicarea
+cu un server (PHP, Ruby sau orice alt limbaj server side).
+          <br>
+     	 Studenții pot lucra la propriile lor idei de extensii sau pot alege una din
+variantele propuse.
+          </p>
+
+          <h3>Informații suplimentare</h3>
+          <ul>
+			<li>Se poate lucra pe orice platformă OS (Windows, Linux, Mac).</li>
+			<li>Recomand folosirea unui IDE pentru JavaScript, HTML și CSS. Spre exemplu,
+Aptana (atât pe Linux, cât și pe Windows).</li>
+			<li>Pentru orice alte informații sau idei de proiecte, vă rog să mă contactați
+la adresa:<br> gabriel(dot) ivanica(at)gmail(dot)com.</li>
+          </ul>
+
+          <h3>Responsabili</h3>
+          <ul>
+            <li>Gabriel Ivănică</li>
+          </ul>
+        </div> <!-- id="project_firefox_content" -->
+
 
         <div class="visualstate" id="project_digikam_content">
           <h3>Proiect CDL: DigiKam</h3>
