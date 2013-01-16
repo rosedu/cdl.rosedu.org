@@ -151,18 +151,21 @@
           <p>
             <a href="#project_awouso" class="cdlmenuitem" id="#project_awouso">WoUSO on Android</a>
           </p>
-	  <p>
-	    <a href="#project_kreatorjs" class="cdlmenuitem" id="#project_kreatorjs">kreator.js</a>
-	  </p>	
-	  <p>
-	   <a href="#project_audacious" class="cdlmenuitem" id="#project_audacious">Audacious</a>
-	  </p>
-	  <p>
-	   <a href="#project_moodle" class="cdlmenuitem" id="#project_moodle">Moodle</a>
-	  </p>
+          <p>
+	      	<a href="#project_kreatorjs" class="cdlmenuitem" id="#project_kreatorjs">kreator.js</a>
+	      </p>	
+	      <p>
+	      	<a href="#project_audacious" class="cdlmenuitem" id="#project_audacious">Audacious</a>
+	  	  </p>
+	      <p>
+	      	<a href="#project_moodle" class="cdlmenuitem" id="#project_moodle">Moodle</a>
+	      </p>
           <p>
             <a href="#project_igamebot" class="cdlmenuitem" id="#project_igamebot">I, GameBot</a>
           </p>
+          <p>
+          	<a href="#project_cmusphinx" class="cdlmenuitem" id="#project_cmusphinx">CMUSphinx</a>
+          </a>
           <p>More details to come, stay tuned.</p>
         </div> <!-- id="proiecte_content" -->
 
@@ -175,10 +178,14 @@
           <h3>Credits</h3>
           <p>(în ordine alfabetică):
           <br>
-          Taygun Agiali, Mihai Bivol, Răzvan Deaconescu, Gina Dobrescu, Mihnea Dobrescu-Balaur,
-<a href="#organizer_alexef" class="cdlmenuitem" id="#organizer_alexef">Alex Eftimie</a>,<a href="#organizer_alexj" class="cdlmenuitem",
-<a href="#organizer_mmaruseac" class="cdlmenuitem" id="#organizer_mmaruseac">Mihai Maruseac</a>, Veaceslav Munteanu, 
-<a href="#organizer_andreip" class="cdlmenuitem" id="#organizer_andreip">Andrei Petre</a>, Sorina Sandu, Dan Șerban, Mihai Tiriplică, Laura Vasilescu și prietenii.</p>
+          Taygun Agiali, Dragoș Badea, Teodora Băluță, Mihai Bivol, Marius Coțofană, Răzvan Deaconescu, Cosmin Didii, Gina Dobrescu, Mihnea Dobrescu-Balaur,
+<a href="#organizer_alexef" class="cdlmenuitem" id="#organizer_alexef">Alex Eftimie</a>, 
+Andrei Ismail, Gabriel Ivănică,
+<a href="#organizer_mmaruseac" class="cdlmenuitem" id="#organizer_mmaruseac">Mihai Maruseac</a>,
+Veaceslav Munteanu, Andrei Oprea,
+<a href="#organizer_mihaio" class="cdlmenuitem" id="#organizer_mihaio">Mihai Oprea</a>, 
+<a href="#organizer_andreip" class="cdlmenuitem" id="#organizer_andreip">Andrei Petre</a>, Sorina Sandu, Bogdan Săndulescu, Ioan-Mihail Stan, Dan Șerban, 
+Mihai Tiriplică, Alex Tomescu, Mihai Trifu, Laura Vasilescu, Bogdan Vlad, Mihai Zamfirescu și prietenii.</p>
         </div> <!-- id="organizatori_content" -->
 
         <div class="visualstate" id="sponsori_content">
@@ -960,7 +967,74 @@ având posibilitatea de a ajuta la dezvoltarea acestuia.</p>
 
 	</div> <!--id="project_vmcheckerui_content" -->
 
-        <div class="visualstate" id="organizer_alexef_content">
+    <div class="visualstate" id="project_cmusphinx_content">
+    	<h3>Proiect CDL: CMUSphinx</h3>
+		<p><strong>Proiect</strong>: <a href="http://sourceforge.net/projects/cmusphinx/" target="_blank">http://sourceforge.net/projects/cmusphinx/</a></p>
+		<p><strong>Wiki proiect</strong>: <a href="http://cmusphinx.sourceforge.net/wiki/" target="_blank">http://cmusphinx.sourceforge.net/wiki/</a></p>
+		<h3>Descriere</h3>
+	  	<p>CMUSPhinx este unul dintre cele mai bune toolkit-uri de recunoaștere automată a vorbirii, folosită pentru crearea de aplicații bazate pe vorbire. Acest toolkit are un numar mare de programe pentru diferite probleme și aplicații. Acestea sunt:
+			<ul> 
+				<li>Pocketsphinx - biblioteca minimală de recunoaștere a vorbirii scrisă în C</li>
+				<li>Sphinxbase - biblioteca de suport pentru PocketSphinx</li>
+				<li>Sphinx4 - recognizer de vorbire ajustabil și modificabil scris în Java</li>
+				<li>CMUclmtk - tool pentru modele de limbă</li>
+				<li>Sphinxtrain - tool pentru antrenarea de modele acustice</li>
+				<li>Sphinx3 - decodor de recunoaștere a vorbirii scris în C</li>
+			</ul>
+		</p>
+		<p>Avantajele folosirii CMUSphinx pentru construirea de aplicații de recunoaștere a limbii:
+			<ul>
+				<li>Algoritmii state-of-the-art pentru recunoașterea eficientă a vorbirii. Tool-urile CMUSphinx poti fi folosite și pe platforme cu puține resurse</li>
+				<li>Design flexibil (!)</li>
+				<li>Concentrare pe dezvoltarea de aplicații practice și nu pe cercetare</li>
+				<li>Suport pentru multe limbi cum ar fi engleza US/UK, franceza, chineza, germana, olandeza, rusa și posibilitatea de a construi modele pentru altele (există un laborator în UPB care se ocupă de modelul limbii române)</li>
+				<li>Licență BSD</li>
+				<li>Dezvoltare activă</li>
+				<li>Comunitate activă</li>
+				<li>Multe tool-uri pentru scopuri similare recunoașterii vorbirii (keywork spotting, alignment, pronunciation evaluation)</li>		
+			</ul>
+		</p>
+		<h3>Proiect propus</h3>
+		<h4>Speaker Diarization - SD (separarea vorbirii în funcție de vorbitori)</h4>
+		<p>Acest proiect va fi o îmbunătățire importantă a toolkit-ului. Presupune împărțirea vorbirii în funcție de vorbitori, fără cunoașterea anterioară a numărului total și are aplicații în multe domenii.</p>
+		<p>Pași în realizarea proiectului:
+		<ol>
+		<li>familiarizarea cu teoria implicată în recunoașterea vorbirii</li>
+		<li>familiarizarea cu toolkit-ul CMUSphinx (realizarea unei aplicații de recunoaștere de mici dimensiuni)</li>
+		<li>cercetare de paper-uri care au ca temă SD</li>
+		<li>implementarea unei soluții în cadrul toolkit-ului</li>
+		</ol></p>
+		<p>Pași ulteriori (opționali, dar încurajați):
+		<ul>
+		<li>îmbunătățirea proiectului</li>
+		<li>contribuții în cadrul comunității CMUSphinx</li>
+		<li>aprofundarea temei</li>		
+		</ul></p>
+		<p><strong>SD papers</strong>:
+		<ul>
+			<li><a href="https://www.dropbox.com/s/xc1p86gjjzjbaox/speaker_recognition_overview.pdf" target="_blank">https://www.dropbox.com/s/xc1p86gjjzjbaox/speaker_recognition_overview.pdf</a></li>
+			<li><a href="https://www.dropbox.com/s/cm6aoaw8xicbwg9/InTech" target="_blank">https://www.dropbox.com/s/cm6aoaw8xicbwg9/InTech</a></li>
+			<li><a href="A_review_of_recent_advances_in_speaker_diarization_with_bayesian_methods.pdf" target="_blank">A_review_of_recent_advances_in_speaker_diarization_with_bayesian_methods.pdf</a></li>
+		</ul>
+		</p>
+		<h3>Requirements</h3>
+		<ul>
+		<li>cunoștințe de Java (mainly) și/sau C și OOP</li>
+		<li>curaj în fața teoriei stufoase</li>
+		<li>curiozitate</li>
+		<li>cunoștințe de structuri de date</li>		
+		</ul>
+		<h3>Beneficii în participare la acest proiect</h3>
+		<ul>
+		<li>cunoștințe privind recunoașterea vorbirii</li>
+		<li>integrarea într-o comunitate open source</li>
+		<li>lucru in echipa</li>
+		<li>dezvoltarea capacității de a citi paper-uri și de a lucra și cu modele matematice și noi structuri de date (Model Markov Ascunse)</li>
+	</ul>
+    </div> <!--id="project_cmusphinx_content" -->
+        
+	
+	<div class="visualstate" id="organizer_alexef_content">
           <h3>Alex Eftimie</h3>
           <!-- We use JavaScript to load images after all the text has been loaded/displayed, hence the use of src="" below -->
           <p><img id="alexef_pic" src="" style="float: right; margin-left: 10px;"> Răspunde la cereri pe alex(at)rosedu(dot)org. Folosește și recomandă <a href="http://ubuntu.ro/">Ubuntu</a>. Îi place web-ul. Legendele spun că face widgets. Are și <a href="http://alex.eftimie.ro/" target="_blank">blog</a>, cheamă studenții la <a href="http://planet.cs.pub.ro/" target="_blank">planetă</a> - condiție: să scrie despre Counter Strike.</p>
@@ -1024,7 +1098,18 @@ având posibilitatea de a ajuta la dezvoltarea acestuia.</p>
           </ul>
         </div> <!-- id="organizer_andreip_content" -->
 
-        <div class="visualstate" id="organizer_adrian_sc_content">
+        <div class="visualstate" id="organizer_mihaio_content">
+          <h3>Mihai Oprea</h3>
+		  <ul>
+		    <li>About: Bachelor & Masters in Computer Science from UPenn, building the next best software development team @ uberVU</li>
+		    <li>Interese: Web Development, Product Design, Team Management & Development, Personal Productivity, Online Marketing, Social Psychology</li>
+			<li>Tehnologii curente: Python, Django + Tastypie, Coffeescript, Mozaic, Angular JS, Backbone JS</li>
+			<li>Twitter: mishu21</li>
+			<li>MicroBlog: <a href="http://blog.mihaioprea.com">blog.mihaioprea.com</a></li>
+		  </ul>
+		</div>
+		
+		<div class="visualstate" id="organizer_adrian_sc_content">
           <h3>Adrian Scoică</h3>
           <p>Îi puteți scrie la adrian.sc #at# rosedu #dot# org. Îi plac algoritmica și limbajele formale, este fan convins <a href="http://www.cplusplus.com/" target="_blank">C++</a>, si în timpul liber citește despre lingvistică computațională și modelarea limbajului natural.
           <br>
