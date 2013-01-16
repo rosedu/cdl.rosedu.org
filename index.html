@@ -148,7 +148,10 @@
           <p>
             <a href="#project_dexonline" class="cdlmenuitem" id="#project_dexonline">DexOnline</a>
           </p>
-          <p>
+		  <p>
+		   <a href="#project_vmchecker_mozaic" class="cdlmenuitem" id="#project_vmchecker_mozaic">vmchecker + mozaic.js</a>
+		  </p>
+	  <p>
             <a href="#project_awouso" class="cdlmenuitem" id="#project_awouso">WoUSO on Android</a>
           </p>
           <p>
@@ -489,6 +492,67 @@ comandă_k</pre>
           </ul>
         </div> <!-- id="curs_8_detalii_content" -->
 
+		<div class="visualstate" id="project_vmchecker_mozaic_content">
+	  	  <h3>Proiect CDL: VMChecker + mozaic.js</h3>
+		  <h3>About</h3>
+		  <p>In this project we want to build a responsive web interface using <a href="https://github.com/ubervu/mozaic" target="_blank">mozaic.js</a> that will streamline the usage of vmcheker.
+		  <br>
+		  <a href="https://gihub.com/vmchecker/vmchecker" target="_blank">vmcheker</a> is an open source tool for automatic homework evaluation developed by the <a href="http://rosedu.org" target="_blank">ROSEdu community</a>
+		  <br>
+          <a href="https://github.com/ubervu/mozaic" target="_blank">mozaic.js</a> is a open source framework developed by <a href="http://twitter.com/ubervu" target="_blank">@ubervu</a> for building complex single page applications for the browser (think GMail and Twitter)
+		  </p>
+		  <h3>Details</h3>
+		  <p>You all used vmcheker before and you know that sometimes it's a pain.
+		  <br>
+		  In this project we want to fix two urgent issues about it:
+		  <ul>
+		    <li>the inefficient way in which a student can check his/her homework grades and TA's observations, constantly having to refresh the application to see if their homework has been graded.i</li>
+			<li>the TA's have difficulties checking the homework's source code, running the automated test suite and making observations on the code itself. For example to see the source code of your homework they have to ssh into the server storing the homeworks and review it from there.</li>
+		  </ul>
+		  </p>
+		  <h3>Solution</h3>
+		  <p>Inspired by github's interface, the solution we're proposing is a single page application where:
+          <ul>
+		   <li>Students can easily see the problems text, their grades, the TA's observations, and the tests results all in one page.</li>
+		   <li>The app will automatically email all this information to the student when a TA has finished checking his homework, so no more frantic refreshes needed.</li>
+		   <li>For TA's we will implement an interface where they can see the results of the test suite, the source code of the homework and make comments on individual source lines.</li>
+		   <li>Below is a screenshot from github that approximates what we have in mind for the TA's interface:</li>
+		  </ul>
+ 		   <p><a href="" target="_blank"><img id="vmchecker_1" src=""></a></p> 
+		  </p>
+		  <h3>Tasks</h3>
+		  <p>1. Use  <a href="https://github.com/ubervu/mozaic" target="_blank">mozaic.js</a> to rebuild the ui for the homework results page.
+		  <br>
+		  2. Use <a href="https://github.com/ubervu/mozaic" target="_blank">mozaic.js</a> to build the TA's ui and help them grade the homeworks easily.
+		  <br>
+		  3. Implement a python email alerts system to notify the student when his/her homework is grade.
+		  <br>
+		  4. If we will have enough time, we will try to implement more features for the applicatons.
+		  </p>
+		  <h3>Tech</h3>
+		  <p>The project implemetation will be done using <a href="https://github.com/ubervu/mozaic" target="_blank">mozaic.js</a> which was designed to help you build single page apps that will run on any platform, browser or form-factor.
+		  <br>
+		  Mozaic is built on top of great open source projects
+		  <br>
+		  Intimate knowledge of these projects is not required. What is required is the will and interest to learn them.
+		  <ul>
+		   <li><a href="http://coffeescript" target="_blank">coffeescript</a> - is a programming language that  <a href="http://en.wikipedia.org/wiki/Source-to-source_compiler" target="_blank">transcompiles</a> to javascript code. It's syntax is similar to ruby and python. The coffeescript code is concise and expressive. The compiled javascript code is easy to read and is teeming with best practices. It's actually a good way to learn javascript</li>
+		  <li><a href="http://backbonejs.org" target="_blank">backbone.js</a> - minimalist application framework. It's the backbone of mozaic providing Models and Collections that sync data with server, Views and basic Router functionality.</li>
+		  <li><a href="http://underscorejs.org" target="_blank">underscore.js</a> - is a small toolset that offers useful functionality missing from standard js. It's also a dependency for backbone.</li>
+		  <li> <a href="http://jqfundamentals.com " target="_blank">jquery.js</a> - levels up all browser inconsistencies (eq. DOM events, DOM traversal, AJAX) and provides an excellent base for javascript applications</li>
+		  <li><a href="htt://requirejs.org" target="_blank">require.js</a> - indispensable tool for large apps, require.js helps mozaic code modular. It also manages module dependencies.</li>
+		  </ul>
+		  </p>
+		  <h3>What will you learn on this project</h3>
+		  <p>First and foremost, you will learn the startup's approch to doing projects: getting things done!
+		  <br>
+		  You will learn the tools, techniques,  tricks and hazards of developing state of the art web applications.
+		  <br>
+		  You will learn tto develop code socially using github.
+		  <br>
+		  You will learn to create high quality code by testing it in a <a href="http://en.wikipedia.org/wiki/Behavior-driven_development" target="_blank">behavior driven way</a>.
+		  </p>
+		</div> <!-- id="project_vmchecker_mozaic" -->
         <div class="visualstate" id="project_whcide_content">
           <h3>Proiect CDL: WHC:IDE</h3>
           <ul>

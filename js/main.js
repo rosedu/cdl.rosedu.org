@@ -78,7 +78,8 @@ Zepto(function($) {
     "#english_logo":   "images/english.png",
     "#arrow_hover":    "images/arrow-hover.png",
     "#green_gradient": "images/green-gradient.png",
-    "#alexef_pic":     "images/alexef.png"
+    "#alexef_pic":     "images/alexef.png",
+	"#vmchecker_1":	   "images/vmchecker_1.png"
   };
   for (var img_id in all_images) {
     $(img_id).attr("src", all_images[img_id]);
