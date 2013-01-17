@@ -148,7 +148,10 @@
           <p>
             <a href="#project_dexonline" class="cdlmenuitem" id="#project_dexonline">DexOnline</a>
           </p>
-          <p>
+		  <p>
+		   <a href="#project_vmchecker_mozaic" class="cdlmenuitem" id="#project_vmchecker_mozaic">vmchecker + mozaic.js</a>
+		  </p>
+	  <p>
             <a href="#project_awouso" class="cdlmenuitem" id="#project_awouso">WoUSO on Android</a>
           </p>
           <p>
@@ -496,6 +499,65 @@ Ana & mere:
             <li>Prezentare: <a href="http://cdl.rosedu.org/2012/store/slides/curs_.pdf" target="_blank">pdf</a></li>
           </ul>
         </div> <!-- id="curs_8_detalii_content" -->
+
+		<div class="visualstate" id="project_vmchecker_mozaic_content">
+      <h3>Proiect CDL: VMChecker + mozaic.js</h3>
+		  <p>In this project we want to build a responsive web interface using <a href="https://github.com/ubervu/mozaic" target="_blank">mozaic.js</a> that will streamline the usage of vmchecker.
+		  <br>
+		  <a href="https://gihub.com/vmchecker/vmchecker" target="_blank">vmchecker</a> is an open source tool for automatic homework evaluation, developed by the <a href="http://rosedu.org" target="_blank">ROSEdu community</a>.
+		  <br>
+          <a href="https://github.com/ubervu/mozaic" target="_blank">mozaic.js</a> is an open source framework developed by <a href="http://twitter.com/ubervu" target="_blank">@ubervu</a> for building complex single page applications for the browser (think GMail and Twitter).
+		  </p>
+		  <h3>Details</h3>
+		  <p>You have all used vmchecker before and you know that sometimes it's a pain.
+		  <br>
+		  In this project we want to fix two urgent issues about it:
+		  <ul>
+		    <li>the inefficient way in which a student can check his/her homework grades and TA's observations, constantly having to refresh the application to see if their homework has been graded.</li>
+			<li>the TA's have difficulties checking the homework's source code, running the automated test suite and making observations on the code itself. For example to see the source code of your homework they have to ssh into the server storing the homeworks and review it from there.</li>
+		  </ul>
+		  </p>
+		  <h3>Solution</h3>
+		  <p>Inspired by github's interface, the solution we're proposing is a single page application where:
+          <ul>
+		   <li>Students can easily see the problems text, their grades, the TA's observations, and the tests results all in one page.</li>
+		   <li>The app will automatically email all this information to the student when a TA has finished checking his homework, so no more frantic refreshes needed.</li>
+		   <li>For TA's we will implement an interface where they can see the results of the test suite, the source code of the homework and make comments on individual source lines.</li>
+		   <li>Below is a screenshot from github that approximates what we have in mind for the TA's interface:</li>
+		  </ul>
+ 		  <img id="vmchecker_1" src="">
+		  </p>
+		  <h3>Tasks</h3>
+		  <ol>
+        <li>Use <a href="https://github.com/ubervu/mozaic" target="_blank">mozaic.js</a> to rebuild the ui for the homework results page.</li>
+        <li>Use <a href="https://github.com/ubervu/mozaic" target="_blank">mozaic.js</a> to build the TA's ui and help them grade the homeworks easily.</li>
+        <li>Implement a python email alerts system to notify the student when his/her homework is graded.</li>
+        <li>If we will have enough time, we will try to implement more features for the applicatons.</li>
+		  </ol>
+		  <h3>Tech</h3>
+		  <p>The project implemetation will be done using <a href="https://github.com/ubervu/mozaic" target="_blank">mozaic.js</a> which was designed to help you build single page apps that will run on any platform, browser or form-factor.
+		  <br>
+		  Mozaic is built on top of great open source projects.
+		  <br>
+		  Intimate knowledge of these projects is not required. What is required is the will and interest to learn them.
+		  <ul>
+		   <li><a href="http://coffeescript" target="_blank">coffeescript</a> - is a programming language that  <a href="http://en.wikipedia.org/wiki/Source-to-source_compiler" target="_blank">transcompiles</a> to javascript code. Its syntax is similar to ruby and python. The coffeescript code is concise and expressive. The compiled javascript code is easy to read and is teeming with best practices. It's actually a good way to learn javascript.</li>
+		  <li><a href="http://backbonejs.org" target="_blank">backbone.js</a> - minimalist application framework. It's the backbone of mozaic providing Models and Collections that sync data with server, Views and basic Router functionality.</li>
+		  <li><a href="http://underscorejs.org" target="_blank">underscore.js</a> - is a small toolset that offers useful functionality missing from standard js. It's also a dependency for backbone.</li>
+		  <li> <a href="http://jqfundamentals.com " target="_blank">jquery.js</a> - levels up all browser inconsistencies (e.g. DOM events, DOM traversal, AJAX) and provides an excellent base for javascript applications.</li>
+		  <li><a href="http://requirejs.org" target="_blank">require.js</a> - indispensable tool for large apps, require.js helps keep mozaic code modular. It also manages module dependencies.</li>
+		  </ul>
+		  </p>
+		  <h3>What will you learn on this project</h3>
+		  <p>First and foremost, you will learn the startup's approach to doing projects: getting things done!
+		  <br>
+		  You will learn the tools, techniques, tricks and hazards of developing state of the art web applications.
+		  <br>
+		  You will learn to develop code socially using github.
+		  <br>
+		  You will learn to create high quality code by testing it in a <a href="http://en.wikipedia.org/wiki/Behavior-driven_development" target="_blank">behavior driven way</a>.
+		  </p>
+		</div> <!-- id="project_vmchecker_mozaic" -->
 
         <div class="visualstate" id="project_whcide_content">
           <h3>Proiect CDL: WHC:IDE</h3>
@@ -926,7 +988,10 @@ având posibilitatea de a ajuta la dezvoltarea acestuia.</p>
               <a href="https://github.com/styleguide/ruby" target="_blank">The Github team's Ruby coding style guide</a>
             </li>
             <li>
-              <a href="https://github.com/dserban/WebDevCourseMaterials" target="_blank">TDD coding challenge, Introduction to SQL</a>
+              <a href="https://github.com/dserban/WebDevCourseMaterials/blob/master/0-tdd-coding-challenge/README.md" target="_blank">TDD coding challenge</a>
+            </li>
+            <li>
+              <a href="https://github.com/dserban/WebDevCourseMaterials/blob/master/1-intro-to-sql/README.md" target="_blank">Introduction to SQL</a>
             </li>
             <li>
               <a href="http://rubyrogues.com/067-rr-gary-bernhardts-testing-style/" target="_blank">Discussion of the "Functional Core, Imperative Shell" design pattern @ The Ruby Rogues Podcast</a>
@@ -936,44 +1001,6 @@ având posibilitatea de a ajuta la dezvoltarea acestuia.</p>
           <h3>Mentor</h3>
           <p>Dan Șerban, dserban01 => gmail</p>
         </div> <!-- id="project_igamebot_content" -->
-
-	<div class="visualstate" id="project_vmcheckerui_content">
-	  <h3>Proiect CDL: VMChecker User Interface</h3>
-	  <ul>
-	    <li><strong>Development</strong>: <a href="https://github.com/cosmin1123/vmchecker" target="_blank">https://github.com/cosmin1123/vmchecker</a></li>
-	    <li><strong>URL</strong>: <a href="https://elf.cs.pub.ro/vmchecker-rsoc/login.php" target="_blank">https://elf.cs.pub.ro/vmchecker-rsoc/login.php</a>
-	      <p>Username: administrator, Parolă: administrator1</p>
-             </li>
-	    <li><strong>Descriere Interfață</strong>: <a href="https://github.com/cosmin1123/vmchecker/wiki/User-Stories" target="_blank">https://github.com/cosmin1123/vmchecker/wiki/User-Stories</a></li>
-	  </ul>
-
-	  <h3>Descriere</h3>
-	  <p>Vmchecker este destinat profersorilor, asistenților și studenților de la Universitatea Politehnica București și nu numai, acesta fiind un proiect open source ce poate fi folosit în orice mediu academic sau liceal ce necesită testarea automată de teme.</p>
-	  <p>Există trei tipuri de utilizatori: student, profesor și administrator, fiecare cu propriile drepturi.</p>
-	  
-	  <h3>Task-uri</h3>
-	  <p>În acest moment proiectul este înca în lucru. Este destul de ușor și necesită cunostințe minimale de programare web, pe care dacă nu le aveți le veți dobândi cu ajutorul meu, sau pe parcursul cursului. Pentru început sugerez cateva taskuri simple, pentru familiarizare cu codul.</p>
-	  <ul>
-	    <li>Realizarea template-ului paginii de acasă pentru student</li>
-	    <li>Eliminarea posibilității de a da click pe titlurile meniurilor și redirectare către #</li>
-	    <li>Crearea interfețelor prezentate în wiki-ul de mai sus. Nu se așteaptă să se implementeze toate, dar măcar o parte</li>
- 	    <li>Crearea unei baze SQL cu date despre fiecare utilizator</li>
-	    <li>Îmbunătățirea securității</li>
-	  </ul>
-
-	  <h3>Cunoștințe necesare</h3>
-	  <ul>
-	    <li>HTML, css, javascript, php, sql</li>
-	    <li>Git</li>
-	  </ul>
-	  <p>Dacă nu aveți aceste cunostințe, nu vă panicați, trebuie să le cnoasteți la un nivel elementar și le veți invăța pe parcurs.</p>
-
-	  <h3>Responsabili</h3>
-	  <ul>
-	    <li>Cosmin Didii</li>
-	  </ul>
-
-	</div> <!--id="project_vmcheckerui_content" -->
 
     <div class="visualstate" id="project_cmusphinx_content">
     	<h3>Proiect CDL: CMUSphinx</h3>
@@ -1040,38 +1067,12 @@ având posibilitatea de a ajuta la dezvoltarea acestuia.</p>
 		<li>dezvoltarea capacității de a citi paper-uri și de a lucra și cu modele matematice și noi structuri de date (Model Markov Ascunse)</li>
 	</ul>
     </div> <!--id="project_cmusphinx_content" -->
-        
 	
 	<div class="visualstate" id="organizer_alexef_content">
           <h3>Alex Eftimie</h3>
           <!-- We use JavaScript to load images after all the text has been loaded/displayed, hence the use of src="" below -->
           <p><img id="alexef_pic" src="" style="float: right; margin-left: 10px;"> Răspunde la cereri pe alex(at)rosedu(dot)org. Folosește și recomandă <a href="http://ubuntu.ro/">Ubuntu</a>. Îi place web-ul. Legendele spun că face widgets. Are și <a href="http://alex.eftimie.ro/" target="_blank">blog</a>, cheamă studenții la <a href="http://planet.cs.pub.ro/" target="_blank">planetă</a> - condiție: să scrie despre Counter Strike.</p>
         </div> <!-- id="organizer_alexef_content" -->
-
-        <div class="visualstate" id="organizer_alexj_content">
-          <h3>Alex Juncu</h3>
-          <ul>
-            <li>Alexandru Juncu a.k.a. AJ or AlexJ</li>
-            <li>Student la Calculatoare, seria CA promoţia 2010</li>
-            <li>Născut în Bacău la 18 Decembrie 1986</li>
-            <li>Interese: Computer Science, Networking, Open Software</li>
-            <li>Ocupaţii în afara facultăţii: Instructor CCNA, Asistent Utilizarea Sistemelor de Operare, Alcoolic</li>
-            <li>Blog: <a href="http://alexj.info/" target="_blank">alexj.info: Computer Science Journal</a></li>
-          </ul>
-        </div> <!-- id="organizer_alexj_content" -->
-
-        <div class="visualstate" id="organizer_tinamanea_content">
-          <h3>Valentina Manea</h3>
-          <ul>
-            <li>băutoare convinsă de apă plată (cu sau fără lamâie) și, ocazional, de bere.</li>
-            <li>gamer semivindecat</li>
-            <li>a început să fie interesată de calculatoare de prin clasa a 7-a când cineva i-a povestit cum poţi folosi <code>netstat -b</code> pentru a afla IP-ul cuiva.</li>
-            <li>a urmat fascinaţia pentru reţele (perioada CCNA) și, tot prin clasa a 10-a, primul contact cu Linux.</li>
-            <li>... acum e prinsă între reţele și programare, cu accent de ceva timp pe ultima și este utilizator credincios de Linux (Arch).</li>
-            <li>last but not least: Pidgin lover!</li>
-            <li>to be continued</li>
-          </ul>
-        </div> <!-- id="organizer_tinamanea_content" -->
 
         <div class="visualstate" id="organizer_mmaruseac_content">
           <h3>Mihai Maruseac</h3>
@@ -1087,13 +1088,6 @@ având posibilitatea de a ajuta la dezvoltarea acestuia.</p>
             <li>Fav quote: <em>All that we have to decide is what we do with the time that is given to us</em></li>
           </ul>
         </div> <!-- id="organizer_mmaruseac_content" -->
-
-        <div class="visualstate" id="organizer_alexm_content">
-          <h3>Alex Morega</h3>
-          <p>Răspunde la mesaje pe adresa “alex”, după care un caracter “arond”, după care “grep” și terminația “ro”. Poate așa crawlerii de adrese de mail n-or să-l găsească. :)
-          <br>
-          E pythonist convins, la job face aplicații web, și are un piticuț pe creier care zice că neapărat codul trebuie scris curat.</p>
-        </div> <!-- id="organizer_alexm_content" -->
 
         <div class="visualstate" id="organizer_andreip_content">
           <h3>Andrei Petre</h3>
@@ -1115,14 +1109,7 @@ având posibilitatea de a ajuta la dezvoltarea acestuia.</p>
 			<li>Twitter: mishu21</li>
 			<li>MicroBlog: <a href="http://blog.mihaioprea.com">blog.mihaioprea.com</a></li>
 		  </ul>
-		</div>
-		
-		<div class="visualstate" id="organizer_adrian_sc_content">
-          <h3>Adrian Scoică</h3>
-          <p>Îi puteți scrie la adrian.sc #at# rosedu #dot# org. Îi plac algoritmica și limbajele formale, este fan convins <a href="http://www.cplusplus.com/" target="_blank">C++</a>, si în timpul liber citește despre lingvistică computațională și modelarea limbajului natural.
-          <br>
-          Acceptă orice fel de invitații la test drive-uri Mazda :)</p>
-        </div> <!-- id="organizer_adrian_sc_content" -->
+        </div> <!-- id="organizer_mihaio_content" -->
       </div> <!-- class="main span8 offset1" -->
 
     </div> <!-- class="row-fluid" -->
