@@ -288,8 +288,7 @@ Mihai Tiriplică, Alex Tomescu, Mihai Trifu, Laura Vasilescu, Bogdan Vlad, Mihai
           <h3>Problema: Inverted Index</h3>
           <p>Un <strong>query</strong> este o propoziție logică de forma:</p>
 	  <pre style="font-family: monospace; white-space: pre;">
-token(1) operator(1) token(2) operator(2) ... operator(k-1) token(k)
-          </pre>
+token(1) operator(1) token(2) operator(2) ... operator(k-1) token(k)</pre>
 	  <p>Unde token(i) este un cuvânt format din caractere alfanumerice oricare ar fi i, iar operator(i) aparține mulțimii <strong>{'|','&'}</strong> oricare ar fi i. Operatorul '&' este echivalent cu "și" logic, iar operatorul '|' este echivalent cu "sau" logic.</p> 
 	 
 	 <h3>Cerință</h3>
@@ -305,8 +304,7 @@ token(1) operator(1) token(2) operator(2) ... operator(k-1) token(k)
 	 <ul>
 	   <li>Fișierul de ieșire se va numi <strong>output.out</strong>. Acesta va conține m linii de forma:
            <pre style="font-family: monospace; white-space: pre;">
-query: index_fisier1, ..., index_fisier_k
-          </pre>
+query: index_fisier1, ..., index_fisier_k</pre>
 	  unde index_fisier_1, ..., index_fisier_k sunt numerele de ordine ale fișierelor pentru care valoarea query-ului este true.
 	   </li>
 	 </ul>
@@ -339,27 +337,23 @@ data2.in
 3
 Ana
 Ana | mere
-Ana & mere
-         </pre>
+Ana & mere</pre>
 	 <p>și fișierele:</p>
 	 <ul>
 	   <li>data1.in
            <pre style="font-family: monospace; white-space: pre;">
-Ana are mere si pere
-     	   </pre>
+Ana are mere si pere</pre>
 	   </li>
 	   <li>data2.in
            <pre style="font-family: monospace; white-space: pre;">
-In copac sunt mere
-           </pre>
+In copac sunt mere</pre>
 	   </li>
 	 </ul>
 	 <p>se va obține ieșirea:</p>
 	 <pre style="font-family: monospace; white-space: pre;">
 Ana: 0
 Ana | mere: 0, 1
-Ana & mere: 0
-        </pre>
+Ana & mere: 0</pre>
 
 	 <h3>Explicații</h3>
 	 <ul>
