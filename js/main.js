@@ -13,6 +13,11 @@ function navigate(visualstate) {
       $("#calendar_iframe").attr("width", "100%");
     }
   }
+  if (visualstate === "#acasa") {
+    $("#tap_target_acasa").css({"opacity": 0});
+  } else {
+    $("#tap_target_acasa").css({"opacity": 1});
+  }
   $(".visualstate").hide();
   var css_selector_to_display = visualstate + "_content";
   $(css_selector_to_display).css({"display": "block", "opacity": 0}).animate({"opacity": 1}, 250);
