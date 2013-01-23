@@ -2,7 +2,7 @@ body {
   font-family: 'OpenSansLight', Arial, sans-serif;
   color: black;
   position: relative;
-  background: #ddd;
+  background: #f3f3f3;
   padding: 0 !important; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -41,7 +41,6 @@ a {
 .wrapper {
   padding: 10px 5% 20px 5%;
   border-top: solid 1px white;
-  border-bottom: solid 1px #c3c3c3;
   background: #f3f3f3 url("../images/white-gradient.png") repeat-x left top; }
   .wrapper h2 {
     font-weight: normal;
@@ -126,13 +125,17 @@ a {
     white-space: nowrap; }
 
 .footer {
-  margin: 5px 5%; }
-  .footer ul li {
-    display: inline-block;
-    margin: 3px 20px 3px 0;
-    color: #666; }
-    .footer ul li a {
-      color: #09784a; }
+  margin: 5px 5%;
+  padding: 15px 0px 20px;
+}
+.footer div {
+  display: inline-block;
+  margin: 3px 10px 3px 10px;
+}
+.footer-wrapper {
+  background: #dddddd;
+  border-top: solid 1px #c3c3c3;
+}
 
 .btn {
   margin: 0px;
@@ -218,3 +221,14 @@ table {
 .visualstate {
   display: none;
 }
+
+.fullheight {
+  height: 100%;
+}
+
+.flexboxlayout {
+  display: -webkit-flex;
+  -webkit-flex-direction: column;
+  -webkit-justify-content: space-between;
+}
+
