@@ -225,6 +225,11 @@ table {
 .fullheight {
   height: 100%;
 }
+@media (max-width: 767px) {
+  .fullheight {
+    height: auto;
+  }
+}
 
 .flexboxlayout {
   display: -webkit-flex;
