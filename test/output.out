@@ -8,6 +8,6 @@ SQL: 1
 index: 0 1 2 
 SQL & index: 1 
 race: 2 
-corpus: 1 2 
-corpus | race: 1 2 
+corpus: 0 1 2 
+corpus | race: 0 1 2 
 race: 2 
