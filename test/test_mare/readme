@@ -1,0 +1,7 @@
+Testul a fost realizat folosind primul capitol din "David Copperfield" de Charles Dickens, downloadat de pe Project Gutenberg.
+Pentru a genera testul, am folosit scriptul generate.py inclus in aceasta arhiva.
+Ca separatori, am ales: .,;?!- []\r\n .
+Outputul meu il gasiti in fisierul output.out.
+Am inclus si executabilul generat de codul meu ( a.out ) pentru alte eventuale teste.
+
+Autor: Mocanu Cristian-Alexandru.
