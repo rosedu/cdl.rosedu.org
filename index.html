@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
 </head>
 <body class="fullheight">
-<div class="flexboxlayout fullheight">
+<div class="fullheight">
   <div class="wrapper">
     <div class="row-fluid">
 
@@ -26,7 +26,7 @@
             <li class="cdlmenuitem" id="#inscriere">    <a href="#inscriere">Înscriere</a>       </li>
             <li class="cdlmenuitem" id="#calendar">     <a href="#calendar">Calendar</a>         </li>
             <li class="cdlmenuitem" id="#proiecte">     <a href="#proiecte">Proiecte</a>         </li>
-            <li class="cdlmenuitem" id="#organizatori"> <a href="#organizatori">Organizatori</a> </li>
+            <li class="cdlmenuitem" id="#meta">         <a href="#meta">Meta</a>                 </li>
             <li class="cdlmenuitem" id="#sponsori">     <a href="#sponsori">Sponsori</a>         </li>
             <li class="cdlmenuitem" id="#english">      <a href="#english">English</a>           </li>
           </ul>
@@ -156,7 +156,7 @@
         </div> <!-- id="proiecte_content" -->
 
 
-        <div class="visualstate" id="organizatori_content">
+        <div class="visualstate" id="meta_content">
           <h3>Contact</h3>
           <p>Ne găsiți pe canalul de IRC #rosedu pe Freenode sau ne puteți trimite un mail la <a href="mailto:cdl@rosedu.org">cdl@rosedu.org</a>.</p>
           <h3>Organizatori și organizare</h3>
@@ -176,7 +176,11 @@ Andrei Oprea,
 <a href="#organizer_mihaio" class="cdlmenuitem" id="#organizer_mihaio">Mihai Oprea</a>, 
 <a href="#organizer_andreip" class="cdlmenuitem" id="#organizer_andreip">Andrei Petre</a>, Sorina Sandu, Bogdan Săndulescu, Ioan-Mihail Stan, Dan Șerban, 
 Mihai Tiriplică, Alex Tomescu, Mihai Trifu, Laura Vasilescu, Bogdan Vlad, Mihai Zamfirescu și prietenii.</p>
-        </div> <!-- id="organizatori_content" -->
+          <h3>Condiții și drepturi de folosire</h3>
+          <p>ROSEdu deține drepturile asupra întregului conținut al acestui sait.</p>
+          <p>ROSEdu, în calitate de deținător al drepturilor de autor, eliberează conținutul acestui sait sub licența <a href="http://www.gnu.org/licenses/fdl-1.2.html" target="_blank">GNU Free Documentation License v1.2</a>. În acest sens, accesul, distribuția și modificarea conținutului sunt libere, cu condiția păstrării autorilor inițiali. Se recomandă folosirea sintagmei "Documentație originală scrisă de membrii asociației studențești ROSEdu".</p>
+          <p>Pentru informații suplimentare, te așteptăm pe <a href="http://lists.rosedu.org/listinfo/rosedu-general" target="_blank">lista generală a ROSEdu</a> sau pe <a href="irc://irc.freenode.net"> canalul IRC #rosedu</a>.</p>
+        </div> <!-- id="meta_content" -->
 
         <div class="visualstate" id="sponsori_content">
           <h3>CDL este sponsorizat de:</h3>
@@ -358,14 +362,6 @@ Ana & mere: 0</pre>
 	 <p><a href="http://en.wikipedia.org/wiki/Hash_table" target="_blank">http://en.wikipedia.org/wiki/Hash_table</a></p>
 	 <p><a href="http://www.systems.ethz.ch/sites/default/files/file/IR_Fall2012/02-Indexing.pdf" target="_blank">Indexing</a></p>
 	</div> <!-- id="inscriere_pb1_content" -->
-
-        <div class="visualstate" id="drepturi_content">
-          <h3>Condiții și drepturi de folosire</h3>
-          <p>ROSEdu deține drepturile asupra întregului conținut al acestui sait.</p>
-          <p>ROSEdu, în calitate de deținător al drepturilor de autor, eliberează conținutul acestui sait sub licența <a href="http://www.gnu.org/licenses/fdl-1.2.html" target="_blank">GNU Free Documentation License v1.2</a>. În acest sens, accesul, distribuția și modificarea conținutului sunt libere, cu condiția păstrării autorilor inițiali. Se recomandă folosirea sintagmei "Documentație originală scrisă de membrii asociației studențești ROSEdu".</p>
-          <p>Pentru informații suplimentare, te așteptăm pe <a href="http://lists.rosedu.org/listinfo/rosedu-general" target="_blank">lista generală a ROSEdu</a> sau pe <a href="irc://irc.freenode.net"> canalul IRC #rosedu</a>.</p>
-          <p>Vă mulțumim!</p>
-        </div> <!-- id="drepturi_content" -->
 
         <div class="visualstate" id="curs_1_detalii_content">
           <h3>Cursul 1</h3>
@@ -1167,8 +1163,8 @@ având posibilitatea de a ajuta la dezvoltarea acestuia.</p>
           </button>
         </p>
         <p class="extra_buttons">
-          <button class="btn greybutton cdlmenuitem" id="#organizatori">
-            <strong>Organizatori</strong>
+          <button class="btn greybutton cdlmenuitem" id="#meta">
+            <strong>Meta</strong>
           </button>
         </p>
       </div> <!-- class="main span8 offset1" -->
@@ -1176,29 +1172,11 @@ având posibilitatea de a ajuta la dezvoltarea acestuia.</p>
     </div> <!-- class="row-fluid" -->
   </div> <!-- class="wrapper" -->
 
-  <div class="footer-wrapper" style="display: none;">
-    <div class="footer">
-      <!-- I gave up and used a table for layout -->
-      <table width=100%>
-        <tr width=100%>
-          <td width=100%>&copy; 2013 <a href="http://www.rosedu.org/" target="_blank">ROSEdu</a>
-            <br>
-            <a href="#drepturi" class="cdlmenuitem" id="#drepturi">Condiții și drepturi de folosire</a>
-          </td>
-          <td>
-            <!-- We use JavaScript to load images after all the text has been loaded/displayed, hence the use of src="" below -->
-            <a href="http://www.rosedu.org/" target="_blank"><img id="rosedu_logo" src="" width=200></a>
-          </td>
-        </tr>
-      </table>
-    </div> <!-- class="footer" -->
-  </div> <!-- class="footer-wrapper" -->
-
   <div style="display: none;">
     <img id="arrow_hover" src="">
     <img id="green_gradient" src="">
   </div>
-</div> <!-- class="flexboxlayout fullheight" -->
+</div> <!-- class="fullheight" -->
 </body>
 </html>
 <script src="js/zepto.min.js"></script>

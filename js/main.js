@@ -76,7 +76,6 @@ Zepto(function($) {
 
   var all_images = {
     "#cdl_logo":       "images/cdl.png",
-    "#rosedu_logo":    "images/rosedu.png",
     "#ixia_logo":      "images/ixia.png",
     "#eaudeweb_logo":  "images/eaudeweb.png",
     "#google_logo":    "images/google.png",
