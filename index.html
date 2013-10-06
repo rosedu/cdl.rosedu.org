@@ -126,16 +126,16 @@
           <h3>Proiecte</h3>
           <p>Te invităm să afli mai multe despre proiectele la care ai putea să lucrezi semestrul acesta!</p>
           <p>
-            <a href="#project_whcide" class="cdlmenuitem" id="#project_monodevelop">MonoDevelop</a>
+            <a href="#project_monodevelop" class="cdlmenuitem" id="#project_monodevelop">MonoDevelop</a>
           </p>
           <p>
-            <a href="#project_firefox" class="cdlmenuitem" id="#project_people">ROSEdu People</a>
+            <a href="#project_people" class="cdlmenuitem" id="#project_people">ROSEdu People</a>
           </p>
           <p>
-            <a href="#project_dexonline" class="cdlmenuitem" id="#project_gnomemusic">GNOME Music</a>
+            <a href="#project_gnomemusic" class="cdlmenuitem" id="#project_gnomemusic">GNOME Music</a>
           </p>
 		  <p>
-		   <a href="#project_vmchecker_mozaic" class="cdlmenuitem" id="#project_mptracker">MPTracker</a>
+		   <a href="#project_mptracker" class="cdlmenuitem" id="#project_mptracker">MPTracker</a>
 		  </p>
         </div> <!-- id="proiecte_content" -->
 
@@ -232,122 +232,23 @@
 
         <div class="visualstate" id="inscriere_content">
           <h3>Înscriere</h3>
-          <p>Trimiteți aplicația voastră pe <a href="https://elf.cs.pub.ro/vmchecker/ui/#CDL" target="_blank">VMChecker</a> până marți, <strong>19 februarie 2013 ora 23:59</strong>. Dacă nu aveți cont pe VMChecker sau primiți orice fel de eroare timiteți un mail la <a href="mailto:cdl@rosedu.org">cdl@rosedu.org</a>.</p>
-	  <p>Aplicația constă într-o arhivă de forma <em>"nume_prenume.zip"</em> ce trebuie să conțină:<p>
-          <ul>
-            <li>Un fișier text în care să ne vorbiți despre voi: de ce vreți să vă treziți în fiecare sâmbătă dimineața pentru a veni la CDL, ce așteptări aveți de la acest curs, ce experiență aveți (dacă aveți), dacă ați mai lucrat sau nu în echipă (nu neapărat programare), cu ce limbaje de programare sunteți familiari, ce v-ar plăcea să învățați în urma acestui curs etc. Acest fișier va conține și datele personale: <strong>nume, prenume, adresa de mail și numărul de telefon (pentru a vă putea contacta)</strong></li>
-            <li>Rezolvarea <strong>problemei</strong>. Problema poate fi rezolvată în ce limbaj de programare doriți. Apreciem un cod curat și eficient, care aderă la un coding style acceptat.
-            <li>Un Makefile pentru compilare. Acesta trebuie să genereze un executabil numit <strong>invertedindex</strong></li>
-            <li>Un fișier text numit <strong>"language"</strong>care să conțină limbajul folosit: C, C++, Java.</li>
-              <br>
-              <a href="#inscriere_pb1" class="cdlmenuitem" id="#inscriere_pb1">Problema</a>
-            </li>
-          </ul>
-	  <br>
-          <em>Exemplu</em>: dacă vă numiți Titi Gheorghiță, arhiva voastră se va numi Titi_Gheorghita.zip</p>
-          <p><strong>Bonus!</strong> Dacă crezi că cineva poate să ne povestească ceva despre tine, contactează-l si dă-ne adresa de e-mail/nr de telefon al lui. Noi îl vom contacta pentru a afla mai multe.</p>
-          <p>Pentru a te putea pregăti pentru interviu, îți propunem <a href="https://projects.rosedu.org/projects/cdl-2011-toamna/wiki/Probleme_model" target="_blank">o listă de taskuri / probleme model de rezolvat</a>.</p>
-          <p>Dacă aveți orice nelămurire, puteți să trimiteți oricând un mail la <a href="mailto:cdl@rosedu.org">cdl@rosedu.org</a> sau pe canalul de IRC #rosedu pe Freenode.
-        </div> <!-- id="inscriere_content" -->
-
-        <div class="visualstate" id="inscriere_pb1_content">
-          <h3>Problema: Inverted Index</h3>
-          <p>Un <strong>query</strong> este o propoziție logică de forma:</p>
-	  <pre style="font-family: monospace; white-space: pre;">
-token(1) operator(1) token(2) operator(2) ... operator(k-1) token(k)</pre>
-	  <p>Unde token(i) este un cuvânt format din caractere alfanumerice oricare ar fi i, iar operator(i) aparține mulțimii <strong>{'|','&'}</strong> oricare ar fi i. Operatorul '&' este echivalent cu "și" logic, iar operatorul '|' este echivalent cu "sau" logic. Pentru simplitate, se consideră că cei doi operatori ('|' și '&') au aceeași prioritate.</p>
-
-	 <h3>Cerință</h3>
-	 <p>Având date <strong>n</strong> fișiere și <strong>m</strong> query-uri să se stabilească pentru fiecare query fișierele care îl respectă(la evaluarea acestui query se obține valoarea <strong>true</strong>). Pentru a determina valoarea de adevăr a unui query veți folosi <strong>InvertedIndex</strong>.<p>
-
-	 <h3>Date de Intrare</h3>
-	 <ul>
-	   <li>Un fișier numit <strong>input.in</strong>. Acesta va conține pe prima linie numărul de fișiere n. Pe următoarele n linii se vor afla numele fișierelor pe care vor fi testate query-urile. Pe linia n+2 se va afla numărul de query-uri m. Pe următoarele m linii se vor afla cele m query-uri.</li>
-	   <li>n fișiere text. Numele fișierelor trebuie să corespundă cu cele din fișierul input.in.</li>
-	 </ul>
-
-	 <h3>Date de Ieșire</h3>
-	 <ul>
-	   <li>Fișierul de ieșire se va numi <strong>output.out</strong>. Acesta va conține m linii de forma:
-           <pre style="font-family: monospace; white-space: pre;">
-query: index_fisier1 ... index_fisier_k</pre>
-	  unde index_fisier_1, ..., index_fisier_k sunt numerele de ordine ale fișierelor pentru care valoarea query-ului este true.
-	   </li>
-	 </ul>
-
-     <h3>Schelet de Cod</h3>
-     <ul>
-     <li><strong>Scheletele de cod pentru C, C++ și Java le găsiți pe <a href="https://github.com/rosedu/cdl/tree/master/2013/schelet_inscriere" target="_blank">GitHub</a>.</strong></li>
-     </ul>
-
-	 <h3>Observații</h3>
-	 <ul>
-	   <li>n, m - numere naturale nenule mai mici decât 500</li>
-	   <li>lungimea unui query este variabilă</li>
-	   <li>între token-uri și operatori este <strong>un singur</strong> spațiu</li>
-       <li>Lungimea unei linii dintr-un fișier este de maxim 2000 de
-       caractere</li>
-	   <li><strong>Trebuie respectat scheletul de cod pentru limbajul ales</strong></li>
-       <li><strong>Problema se testează pe Linux, dar terminatorii pentru fișierele de intrare sunt CLRF !</strong></li>
-       <li><strong>Aveți grijă la separatorii din fișierele de text!</strong> Nu orice nu este alfanumeric este considerat separator. Spre exemplu, cratima nu este considerată separator, dar semnele de punctuație și spațiul da.</li>
-	 </ul>
-
-	 <h3>Exemplu</h3>
-	 <p>Pentru fișierul de intrare:</p>
-	 <pre style="font-family: monospace; white-space: pre;">
-2
-data1.in
-data2.in
-3
-Ana
-Ana | mere
-Ana & mere</pre>
-	 <p>și fișierele:</p>
-	 <ul>
-	   <li>data1.in
-           <pre style="font-family: monospace; white-space: pre;">
-Ana are mere si pere</pre>
-	   </li>
-	   <li>data2.in
-           <pre style="font-family: monospace; white-space: pre;">
-In copac sunt mere</pre>
-	   </li>
-	 </ul>
-	 <p>se va obține ieșirea:</p>
-	 <pre style="font-family: monospace; white-space: pre;">
-Ana: 0
-Ana | mere: 0 1
-Ana & mere: 0</pre>
-     <h3>Exemplu test</h3>
-	 <p>Puteți găsi un exemplu de test pe <a href="https://github.com/rosedu/cdl.rosedu.org/tree/master/test" target="_blank">GitHub</a>.</p>
-	 <h3>Explicații</h3>
-	 <ul>
-	   <li>Primul query are valoarea true dacă în fișier se găsește cuvântul "Ana".</li>
-	   <li>Al doilea query are valoarea true dacă în fișier există fie cuvântul "Ana", fie cuvântul "mere", fie ambele cuvinte</li>
-	   <li>Al treilea query are valoarea true dacă în fișier există și cuvântul "Ana" și cuvântul "mere"</li>
-	 </ul>
-
-	 <h3>Informații utile</h3>
-	 <p><a href="http://en.wikipedia.org/wiki/Inverted_index" target="_blank">http://en.wikipedia.org/wiki/Inverted_index</a></p>
-	 <p><a href="http://en.wikipedia.org/wiki/Hash_table" target="_blank">http://en.wikipedia.org/wiki/Hash_table</a></p>
-	 <p><a href="http://www.systems.ethz.ch/sites/default/files/file/IR_Fall2012/02-Indexing.pdf" target="_blank">Indexing</a></p>
-	</div> <!-- id="inscriere_pb1_content" -->
+          <p> Înscrie-te la CDL completând acest
+                <a href='https://docs.google.com/forms/d/1w5m52OFycCAiGhJsDC1drxDNojg6QmT4Uu7I7lUPdaQ/viewform'>formular</a>.
+          </p>
+        </div>
 
         <div class="visualstate" id="curs_1_detalii_content">
           <h3>Cursul 1</h3>
           <br>
-          <h4>Project Management / Redmine</h4>
-          <ul>
-            <li>Autor: Răzvan Deaconescu</li>
-            <li>Prezentare: <a href="http://cdl.rosedu.org/2012/store/slides/curs1_redmine.pdf" target="_blank">pdf</a></li>
-          </ul>
+          <h4>Linux</h4>
           <br>
+          <!--
           <h4>Despre GSoC</h4>
           <ul>
             <li>Autor: Mihai Bivol</li>
             <li>Prezentare: <a href="http://cdl.rosedu.org/2012/store/slides/curs1_gsoc.pdf" target="_blank">pdf</a></li>
           </ul>
-        </div> <!-- id="curs_1_detalii_content" -->
+        </div> !--> <!-- id="curs_1_detalii_content" -->
 
         <div class="visualstate" id="curs_2_detalii_content">
           <h3>Cursul 2</h3>
@@ -355,13 +256,13 @@ Ana & mere: 0</pre>
           <h4>###</h4>
           <ul>
             <li>Autor: _</li>
-            <li>Prezentare: <a href="http://cdl.rosedu.org/2012/store/slides/curs_.pdf" target="_blank">pdf</a></li>
+            <li>Prezentare: <a href="#" target="_blank">pdf</a></li>
           </ul>
           <br>
           <h4>###</h4>
           <ul>
             <li>Autor: _</li>
-            <li>Prezentare: <a href="http://cdl.rosedu.org/2012/store/slides/curs_.pdf" target="_blank">pdf</a></li>
+            <li>Prezentare: <a href="#" target="_blank">pdf</a></li>
           </ul>
         </div> <!-- id="curs_2_detalii_content" -->
 
@@ -371,13 +272,13 @@ Ana & mere: 0</pre>
           <h4>###</h4>
           <ul>
             <li>Autor: _</li>
-            <li>Prezentare: <a href="http://cdl.rosedu.org/2012/store/slides/curs_.pdf" target="_blank">pdf</a></li>
+            <li>Prezentare: <a href="#" target="_blank">pdf</a></li>
           </ul>
           <br>
           <h4>###</h4>
           <ul>
             <li>Autor: _</li>
-            <li>Prezentare: <a href="http://cdl.rosedu.org/2012/store/slides/curs_.pdf" target="_blank">pdf</a></li>
+            <li>Prezentare: <a href="#" target="_blank">pdf</a></li>
           </ul>
         </div> <!-- id="curs_3_detalii_content" -->
 
@@ -387,13 +288,13 @@ Ana & mere: 0</pre>
           <h4>###</h4>
           <ul>
             <li>Autor: _</li>
-            <li>Prezentare: <a href="http://cdl.rosedu.org/2012/store/slides/curs_.pdf" target="_blank">pdf</a></li>
+            <li>Prezentare: <a href="#" target="_blank">pdf</a></li>
           </ul>
           <br>
           <h4>###</h4>
           <ul>
             <li>Autor: _</li>
-            <li>Prezentare: <a href="http://cdl.rosedu.org/2012/store/slides/curs_.pdf" target="_blank">pdf</a></li>
+            <li>Prezentare: <a href="#" target="_blank">pdf</a></li>
           </ul>
         </div> <!-- id="curs_4_detalii_content" -->
 
@@ -403,13 +304,13 @@ Ana & mere: 0</pre>
           <h4>###</h4>
           <ul>
             <li>Autor: _</li>
-            <li>Prezentare: <a href="http://cdl.rosedu.org/2012/store/slides/curs_.pdf" target="_blank">pdf</a></li>
+            <li>Prezentare: <a href="#" target="_blank">pdf</a></li>
           </ul>
           <br>
           <h4>###</h4>
           <ul>
             <li>Autor: _</li>
-            <li>Prezentare: <a href="http://cdl.rosedu.org/2012/store/slides/curs_.pdf" target="_blank">pdf</a></li>
+            <li>Prezentare: <a href="#" target="_blank">pdf</a></li>
           </ul>
         </div> <!-- id="curs_5_detalii_content" -->
 
@@ -419,13 +320,13 @@ Ana & mere: 0</pre>
           <h4>###</h4>
           <ul>
             <li>Autor: _</li>
-            <li>Prezentare: <a href="http://cdl.rosedu.org/2012/store/slides/curs_.pdf" target="_blank">pdf</a></li>
+            <li>Prezentare: <a href="#" target="_blank">pdf</a></li>
           </ul>
           <br>
           <h4>###</h4>
           <ul>
             <li>Autor: _</li>
-            <li>Prezentare: <a href="http://cdl.rosedu.org/2012/store/slides/curs_.pdf" target="_blank">pdf</a></li>
+            <li>Prezentare: <a href="#" target="_blank">pdf</a></li>
           </ul>
         </div> <!-- id="curs_6_detalii_content" -->
 
@@ -435,13 +336,13 @@ Ana & mere: 0</pre>
           <h4>###</h4>
           <ul>
             <li>Autor: _</li>
-            <li>Prezentare: <a href="http://cdl.rosedu.org/2012/store/slides/curs_.pdf" target="_blank">pdf</a></li>
+            <li>Prezentare: <a href="#" target="_blank">pdf</a></li>
           </ul>
           <br>
           <h4>###</h4>
           <ul>
             <li>Autor: _</li>
-            <li>Prezentare: <a href="http://cdl.rosedu.org/2012/store/slides/curs_.pdf" target="_blank">pdf</a></li>
+            <li>Prezentare: <a href="#" target="_blank">pdf</a></li>
           </ul>
         </div> <!-- id="curs_7_detalii_content" -->
 
@@ -451,810 +352,145 @@ Ana & mere: 0</pre>
           <h4>###</h4>
           <ul>
             <li>Autor: _</li>
-            <li>Prezentare: <a href="http://cdl.rosedu.org/2012/store/slides/curs_.pdf" target="_blank">pdf</a></li>
+            <li>Prezentare: <a href="#" target="_blank">pdf</a></li>
           </ul>
           <br>
           <h4>###</h4>
           <ul>
             <li>Autor: _</li>
-            <li>Prezentare: <a href="http://cdl.rosedu.org/2012/store/slides/curs_.pdf" target="_blank">pdf</a></li>
+            <li>Prezentare: <a href="#" target="_blank">pdf</a></li>
           </ul>
         </div> <!-- id="curs_8_detalii_content" -->
 
 
-        <div class="visualstate" id="project_wouso_content">
-	  <h3>Proiect CDL: World of USO</h3>
-	  <ul>
-	    <li><strong>URL</strong>:<a href="http://wouso.rosedu.org/" target="_blank">http://wouso.rosedu.org/wousodjango</a></li>
-            <li><strong>Repo and Development</strong>: <a href="https://github.com/rosedu/wouso" target="_blank">https://github.com/rosedu/wouso</a></li>
-          </ul>
+    <div class="visualstate" id="project_monodevelop">
+	  <h3>Proiect CDL: MonoDevelop</h3>
+    	  <ul>
+    	    <li><strong>URL</strong>:<a href="http://monodevelop.com/" target="_blank">http://monodevelop.com/</a></li>
+                <li><strong>Repo and Development</strong>: <a href="#" target="_blank">#</a></li>
+         </ul>
 
 	  <h3>Descriere</h3>
-	  <p>World of USO este o platformă online de învățare, asemănătoare cu un joc de cunoștințe. O modalitate interactivă și distractivă prin care studenții pot învăța noținui legate de Linux și cultură IT.</p>
-	  <p>Jocul este destinat studenților de anul I la Calculatoare, la materia Utilizarea Sistemelor de Operare, dar în viitor sperăm să-l extindem și pentru alte materii.</p>
-	  <p>World of USO este dezvoltat in Django. Informații despre Django găsiți <a href="https://docs.djangoproject.com/en/dev/intro/overview/">aici</a></p>
-
+	  <p>Proiectul este un IDE cross-platform folosit pentru dezvolta aplicații, care folosesc tehnologii precum Mono sau Microsoft .NET, în principiu C# și limbajele oferite de framework-ul .NET (F#, Boo, VB.NET), dar și altele precum Java, C/C++, Python (pe sisteme de tip Linux). </p>
+      <p> IDE-ul oferă funcții precum completarea automată a codului, folosirea sistemelor de versionare, design grafic, debugging, text templating, unit testing. Proiectul a devenit deja o platformă care se poate extinde prin module.</p>
 	  <h3>TODO</h3>
 	  <ul>
-	    <li>Rezolvarea cât mai multor bug-uri:<a href="https://github.com/rosedu/wouso/issues?state=open">Issues</a></li>
-	    <li>Un nou mod de atac, RAID</li>
 	  </ul>
 
 	  <h3>Este necesar să</h3>
 	  <ul>
-	    <li>Vreți să lucrați la WoUSO</li>
-	    <li>Vreți să învățați Python, Django, eventual și JavaScript/JQuery</li>
+	    <li>Vreți să învățați C#, .NET</li>
 	  </ul>
 
-	  <h3>Mentori</h3>
+	  <h3>Mentor</h3>
 	  <ul>
-	    <li>Iulian Stana</li>
+	    <li>Marius Ungureanu</li>
           </ul>
-	</div>
+	</div> <!-- id="project_monodevelop" !-->
 
+    <div class="visualstate" id="project_people">
+      <h3>Proiect CDL: ROSEdu People</h3>
+        <ul>
+          <li><strong>URL</strong>:<a href="http://peole.rosedu.org/" target="_blank">http://people.rosedu.org/</a></li>
+          <li><strong>Repo and Development</strong>: <a href="#" target="_blank">#</a></li>
+         </ul>
 
-     <div class="visualstate" id="project_vmchecker_mozaic_content">
-      <h3>Proiect CDL: VMChecker + mozaic.js</h3>
-		  <p>In this project we want to build a responsive web interface using <a href="https://github.com/ubervu/mozaic" target="_blank">mozaic.js</a> that will streamline the usage of vmchecker.
-		  <br>
-		  <a href="https://gihub.com/vmchecker/vmchecker" target="_blank">vmchecker</a> is an open source tool for automatic homework evaluation, developed by the <a href="http://rosedu.org" target="_blank">ROSEdu community</a>.
-		  <br>
-          <a href="https://github.com/ubervu/mozaic" target="_blank">mozaic.js</a> is an open source framework developed by <a href="http://twitter.com/ubervu" target="_blank">@ubervu</a> for building complex single page applications for the browser (think GMail and Twitter).
-		  </p>
-		  <h3>Details</h3>
-		  <p>You have all used vmchecker before and you know that sometimes it's a pain.
-		  <br>
-		  In this project we want to fix two urgent issues about it:
-		  <ul>
-		    <li>the inefficient way in which a student can check his/her homework grades and TA's observations, constantly having to refresh the application to see if their homework has been graded.</li>
-			<li>the TA's have difficulties checking the homework's source code, running the automated test suite and making observations on the code itself. For example to see the source code of your homework they have to ssh into the server storing the homeworks and review it from there.</li>
-		  </ul>
-		  </p>
-		  <h3>Solution</h3>
-		  <p>Inspired by github's interface, the solution we're proposing is a single page application where:
+        <h3>Descriere</h3>
+          <p>ROSEdu People este o aplicație care își dorește să prezinte un overview al proiectelor ROSEdu. Ne dorim ca People să fie un mod prin care putem vizualiza evoluția în timp a comunității și a activităților.</p>
+          </br>
+          <p>Momentan, aplicația este într-o versiune alpha, având acces doar persoanele cu cont. În urma CDL sperăm să rezolvăm bugurile curente și să putem adăuga informații despre toate proiectele și participanții la acestea.</p>
+          </br>
+          <p>ROSEdu People este scris în Python. folosește frameworkul Django și are o parte din logică în JavaScript.</p>
+
+		<h3>Mentor</h3>
           <ul>
-		   <li>Students can easily see the problems text, their grades, the TA's observations, and the tests results all in one page.</li>
-		   <li>The app will automatically email all this information to the student when a TA has finished checking his homework, so no more frantic refreshes needed.</li>
-		   <li>For TA's we will implement an interface where they can see the results of the test suite, the source code of the homework and make comments on individual source lines.</li>
-		   <li>Below is a screenshot from github that approximates what we have in mind for the TA's interface:</li>
-		  </ul>
- 		  <img id="vmchecker_1" src="">
-		  </p>
-		  <h3>Tasks</h3>
-		  <ol>
-        <li>Use <a href="https://github.com/ubervu/mozaic" target="_blank">mozaic.js</a> to rebuild the ui for the homework results page.</li>
-        <li>Use <a href="https://github.com/ubervu/mozaic" target="_blank">mozaic.js</a> to build the TA's ui and help them grade the homeworks easily.</li>
-        <li>Implement a python email alerts system to notify the student when his/her homework is graded.</li>
-        <li>If we will have enough time, we will try to implement more features for the applicatons.</li>
-		  </ol>
-		  <h3>Tech</h3>
-		  <p>The project implemetation will be done using <a href="https://github.com/ubervu/mozaic" target="_blank">mozaic.js</a> which was designed to help you build single page apps that will run on any platform, browser or form-factor.
-		  <br>
-		  Mozaic is built on top of great open source projects.
-		  <br>
-		  Intimate knowledge of these projects is not required. What is required is the will and interest to learn them.
-		  <ul>
-		   <li><a href="http://coffeescript" target="_blank">coffeescript</a> - is a programming language that  <a href="http://en.wikipedia.org/wiki/Source-to-source_compiler" target="_blank">transcompiles</a> to javascript code. Its syntax is similar to ruby and python. The coffeescript code is concise and expressive. The compiled javascript code is easy to read and is teeming with best practices. It's actually a good way to learn javascript.</li>
-		  <li><a href="http://backbonejs.org" target="_blank">backbone.js</a> - minimalist application framework. It's the backbone of mozaic providing Models and Collections that sync data with server, Views and basic Router functionality.</li>
-		  <li><a href="http://underscorejs.org" target="_blank">underscore.js</a> - is a small toolset that offers useful functionality missing from standard js. It's also a dependency for backbone.</li>
-		  <li> <a href="http://jqfundamentals.com " target="_blank">jquery.js</a> - levels up all browser inconsistencies (e.g. DOM events, DOM traversal, AJAX) and provides an excellent base for javascript applications.</li>
-		  <li><a href="http://requirejs.org" target="_blank">require.js</a> - indispensable tool for large apps, require.js helps keep mozaic code modular. It also manages module dependencies.</li>
-		  </ul>
-		  </p>
-		  <h3>What will you learn on this project</h3>
-		  <p>First and foremost, you will learn the startup's approach to doing projects: getting things done!
-		  <br>
-		  You will learn the tools, techniques, tricks and hazards of developing state of the art web applications.
-		  <br>
-		  You will learn to develop code socially using github.
-		  <br>
-		  You will learn to create high quality code by testing it in a <a href="http://en.wikipedia.org/wiki/Behavior-driven_development" target="_blank">behavior driven way</a>.
-		  </p>
-		</div> <!-- id="project_vmchecker_mozaic" -->
-
-        <div class="visualstate" id="project_whcide_content">
-          <h3>Proiect CDL: WHC:IDE</h3>
-          <ul>
-            <li><strong>Development</strong>: <a
-              href="https://github.com/veaceslav/WHC-IDE" target="_blank">https://github.com/veaceslav/WHC-IDE</a></li>
+            <li>Mihai Bivol</li>
           </ul>
-          <h3>Descriere</h3>
-          <p>WHC Core este destinat executării pogramelor în sisteme distribuite precum sunt clusterele sau o rețea de calculatoare. Pentru a folosi la maxim toate resursele disponibile, programele sunt bazate pe OpenCL, folosind atât resursele disponibile pe partea de CPU cât și pe partea de GPU(Placa grafică).
-          <br>
-          WHC IDE este destinat dezvoltării programelor care rulează pe clustere. Compilează și rulează proiectele local, însă e în stare să folosească atât procesorul, cât și placa grafică. Include un editor text, diagramă pentru reprezentarea  workflow-ului și creare/management proiect. Aici este un model grafic despre organizarea unor module în WHC IDE și interdependențele:
-          <br>
-	   <a href="https://docs.google.com/drawings/d/1GszZbyVLKkmSqnvvJfnA5N0A1yIYNpLdkz5TkLwJwMo/edit" target="_blank">Model Grafic</a>
+	</div> <!-- id="project_people" -->
 
-          </p>
-	  <h3>Descriere Task-uri</h3>
-	  <p> La moment WHC IDE este în proces de trecere la TDD(test driven development), deci se acceptă in repo doar teste, sau features+ teste. Pentru a vă familiariza cu codul, la început vor fi propuse câteva task-uri ușoare(10 min pentru mine, dar eu cunosc tot codul):</p>
-          <ul>
-            <li>[BUG] Execuția eșuează dacă folderul Execute nu este prezent in directoriul task-ului. De adaugat o verificare suplimentară a directoriului unde se scrie.</li>
-            <li>[BUG] Programul nu poate copia fișierele de output daca Data Folder-ul nu există. De creeat directoriul inainte de copiere.</li>
-            <li>[BUG] La redenumirea unui Task/Data, elementele din diagramă nu se redenumesc.</li>
-            <li>[TESTS] Teste, la alegere pentru oricare componentă netestată.</li>
-          </ul>
-          <h3>Task-uri Intermediare</h3>
-	  <p>Task-urile intermediare nu sunt dificile însă, trebuie scris mai mult decât câteva rânduri de cod:</p>
-          <ul>
-            <li>[FEATURE] La crearea proiectului, este necesar să fie creeată o clasa main.c sau .cpp în care să se exemplifice modul de utilizare a argumentelor folosite de IDE la rulare</li>
-            <li>[FEATURE] Parsarea fișierului CMakeList.txt pentru identificarea numelui executabilului creat de acesta.</li>
-            <li>[REFACTORIZARE] Unificarea tuturor setărilor într-o singură clasă(structură)</li>
-          </ul>
-	  <h3> Task-uri Heroes Needed </h3>
-	  <ul>
-	    <li>[BUG] Syntax Highlighting-ul din setări corupe fișierele de configurare.</li>
-	  </ul>
-          <h3>Tehnologii folosite</h3>
-          <ul>
-            <li>C++/Qt</li>
-            <li>Qt Unit Test Suite</li>
-	        <li>cmake</li>
-	        <li>OpenCL</li>
-          </ul>
+        <div class="visualstate" id="project_gnomemusic">
+          <h3>Proiect CDL: GNOME Music</h3>
+           <ul>
+          <li><strong>URL</strong>:<a href="https://live.gnome.org/Music" target="_blank">https://live.gnome.org/Music</a></li>
+          <li><strong>Repo and Development</strong>:
+          <a href="https://github.com/gnome-prototypes-team/gnome-music" target="_blank">https://github.com/gnome-prototypes-team/gnome-music</a>
+          </li>
+         </ul>
 
-	  <h3>Cunoștințe necesare</h3>
-	  <ul>
- 	    <li>C/C++,OOP (cel puțin, C + partea de structuri in C sa o cunoașteți foarte bine)</li>
-	    <li>Git - foarte important. înainte de a începe lucrul la proiect, creați-vă un cont pe github.com și exersați comenzi de git (creare, pull, push, creare branch-uri, rezolvare conflicte).</li>
-	    <li>Qt API - opțional, dar binevenit</li>
-	  </ul>
-
-          <h3>Parcurgeți</h3>
-          <p>Recomandăm să citiți/parcurgeți următoarele:</p>
-          <ul>
-            <li>
-              <a href=" http://swarm.cs.pub.ro/~slavic/qt-tutorial.zip" target="_blank">Qt Tutorial</a>
-            </li>
-          </ul>
-
-	  <h3>Observații</h3>
-	  <ul>
-	    <li>Pentru lucrul la acest proiect, aveți nevoie de un sistem, preferabil Linux, cu Qt SDK instalat + QtCreator</li>
-	    <li>În repo-ul de git este disponibil un .pro pentru QtCreator și un CMakeLists.txt pentru cmake.</li>
-	    <li>Aveți nevoie de un calculator cu un procesor dual-core(nu conteaza de ce tip)</li>
-	    <li>Pentru a fi eficienți, vă sfătuiesc să parcurgeți tutorialul Qt + să experimentați cu git înainte de începerea cursului. Cunoștințele de git vă vor ajuta la orice proiect open-source, nu doar la WHC IDE sau cele prezentate la acest curs.</li>
-
-	     <li>Pentru întrebări suplimentare nu ezitați să mă contactați Veaceslav Munteanu slavuttici at gmail punct com</li>
-	  </ul>
-          <h3>Responsabili</h3>
-          <ul>
-            <li>Veaceslav Munteanu slavuttici at gmail dot com</li>
-          </ul>
-        </div> <!-- id="project_whcide_content" -->
-
-         <div class="visualstate" id="project_firefox_content">
-          <h3>Proiect CDL: Firefox Add-ons</h3>
-          <ul>
-            <li><strong>Development</strong>:</li>
-          </ul>
-
-          <h3>Descriere</h3>
-          <p>Dezvoltarea de add-ons pentru cel mai popular browser open source -
-Mozilla Firefox. Utilizând noul SDK se pot crea extensii atât pentru platformele
- desktop, cât și pentru cele mobile (Android). Asemenea browser-ului majoritatea
- extensiilor sunt proiecte open source, cei interesați putând foarte ușor să contribuie
- atât la extensiile existente cât și să dezvolte unele noi.
-          <br>
-          Popularitatea browserului Firefox se datorează în principiu acestor extensii.
- Oricine se poate alătura comunității de sute de dezvoltatori.
-          <br>
-          </p>
-
-          <h3>Tehnologii</h3>
-          <p>ADD-on SDK: <a href="https://addons.mozilla.org/en-US/developers/docs/sdk/latest/" target="_blank">https://addons.mozilla.org/en-US/developers/docs/sdk/latest/</a> </p>
-
-          <h3>Cunoștințe necesare</h3>
-          <ul>
- 	  		<li>JavaScript (cel puțin cunoștințe de bază despre JavaScript - dezvoltarea
-se va face în JavaScript) </li>
-	  		<li>GHTML, DOM, parsare XML (necesare pentru parsare, aterare structură HTML)</li>
-	   		<li>CSS (nu obligatoriu)</li>
-			<li>module CommonJS (nu obligatoriu)</li>
-			<li>XUL și XPCOM (tehnologiile folosite pentru interfața grafică a browserului -
-se învață pe parcurs)</li>
-          </ul>
-
-          <h3>Resurse disponibile</h3>
-          <ul>
-	  		<li>Mozilla MDN - pentru orice informație despre Firefox și tehnologii web</li>
-			<li>XPCOM - <a href="https://developer.mozilla.org/en-US/docs/XPCOM" target="_blank">https://developer.mozilla.org/en-US/docs/XPCOM</a></li>
-			<li>Module CommonJS - <a href="http://www.commonjs.org/specs/modules/1.0/" target="_blank">http://www.commonjs.org/specs/modules/1.0/</a></li>
-			<li>Pentru codul sursă al extensiilor existente - <a href="http://www.commonjs.org/specs/modules/1.0/" target="_blank">http://www.commonjs.org/specs/modules/1.0/</a></li>
-			<li>Codul sursă al browserului, dacă este necesar<a href="http://mxr.mozilla.org/ " target="_blank">http://mxr.mozilla.org/</a></li>
-          </ul>
-
-          <h3>Despre proiecte</h3>
-          <p>Nivelul de cunoștințe necesare depinde foarte mult de complexitatea extensiei
-dezvoltate: de la JavaScript basic + HTML până la extensii ce necesită comunicarea
-cu un server (PHP, Ruby sau orice alt limbaj server side).
-          <br>
-     	 Studenții pot lucra la propriile lor idei de extensii sau pot alege una din
-variantele propuse.
-          </p>
-
-          <h3>Informații suplimentare</h3>
-          <ul>
-			<li>Se poate lucra pe orice platformă OS (Windows, Linux, Mac).</li>
-			<li>Recomand folosirea unui IDE pentru JavaScript, HTML și CSS. Spre exemplu,
-Aptana (atât pe Linux, cât și pe Windows).</li>
-			<li>Pentru orice alte informații sau idei de proiecte, vă rog să mă contactați
-la adresa:<br> gabriel(dot) ivanica(at)gmail(dot)com.</li>
-          </ul>
-
-          <h3>Responsabili</h3>
-          <ul>
-            <li>Gabriel Ivănică</li>
-          </ul>
-        </div> <!-- id="project_firefox_content" -->
-
-
-     <div class="visualstate" id="project_dexonline_content">
-     <h3>Proiect CDL: DexOnline</h3>
-     <ul>
-       <li><strong>URL</strong>: <a href="http://dexonline.ro/" target="_blank">http://dexonline.ro/</a></li>
-       <li><strong>Development</strong>: <a href="http://wiki.dexonline.ro/" target="_blank">http://wiki.dexonline.ro/</a></li>
-       <li><strong>Contact</strong>: dexonline@lists.rosedu.org</li>
-	 </ul>
-	  <h3>Descriere</h3>
-	  <p>DEX online este transpunerea pe internet a unor dicționare de prestigiu ale limbii române,
-fiind accesat în fiecare lună de peste 1,5 milioane de vizitatori unici (locul 2 în top site-uri
-educație/învățământ, conform trafic.ro).</p>
-	  <p>Proiectul, creat și întreținut de un colectiv de voluntari, este open source, oricine dorește
-având posibilitatea de a ajuta la dezvoltarea acestuia.</p>
-
-	  <h3>Descriere Task-uri</h3>
-	  <p>Se poate lucra la unul sau mai multe dintre task-urile:</p>
-	  <ul>
-	    <li>Test de vocabular (#233) (ceva asemănător cu ​<a href="http://testyourvocab.com/">http://testyourvocab.com/</a>)</li>
-	    <li>Jocul „Moara cuvintelor” trebuie să aleagă cuvinte similare folosind trigramele (#288)</li>
-	    <li>Joculețe lingvistice în HTML5 (#257)</li>
-	    <li>Log analyzer (#206)</li>
-	  </ul>
-
-	  <h3>Cunoștințe necesare</h3>
-	  <ul>
-	    <li>PHP</li>
-	    <li>MySQL</li>
-	    <li>Opțional: HTML, CSS, JavaScript, XML</li>
-	  </ul>
-
-	  <h3>Recomandări</h3>
-	  <ul>
-	    <li>Recomandăm să parcurgeți tutorialele de la <a href="http://www.w3schools.com/">W3School</a></li>
-	  </ul>
-
-	  <h3>Responsabili</h3>
-	  <ul>
-            <li>Mihai Trifu</li>
-	  </ul>
-        </div> <!-- id="project_dexonline_content" -->
-
-
-        <div class="visualstate" id="project_awouso_content">
-     <h3>Proiect CDL: WoUSO on Android</h3>
-     <ul>
-	 </ul>
-	  <h3>Descriere</h3>
-	  <p>Fiind reprezentativ pentru cursul de Utilizarea Sistemelor de Operare, WoUSO on Android se dorește a fi o aplicație rapidă, interactivă și de bună calitate.
-	  <br>
-      Ceea ce ne dorim noi este să aducem proiectul existent pe dispozitivele Android ale tuturor studenților ce dețin un smartphone, crescând astfel numărul de utilizatori și odată cu acesta, popularitatea aplicației.</p>
-      <h3>TODO</h3>
-      <ul>
-        <li>Îmbunătățire:
-            <ul>
-               <li>UI</li>
-               <li>Messages</li>
-               <li>Question Of The Day</li>
-               <li>Challenges</li>
-               <li>Other Profiles/Groups</li>
-            </ul></li>
-        <li>Integrare push notifications</li>
-        <li>Implementare search feature</li>
-        <li>Bug fixing</li>
-      </ul>
-      <h3>De ce WoUSO on Android?</h3>
-      <ul>
-        <li>Vă veți îmbunătăți skillurile de programare dobândind cunoștinte despre  arhitectura Android OS, JDK, HTTP, JSON, XML, GIT, etc.</li>
-        <li>Veți contribui semnificativ la dezvoltarea jocului.</li>
-        <li>Veți stăpâni o serie de instrumente și tehnici ce vă vor permite, pe viitor, să dezvoltați chiar și propriile aplicații pentru această platformă.</li>
-      </ul>
-	  <h3>Tehnologii folosite</h3>
-      <ul>
-        <li>Pentru mediul de dezvoltare vom folosi limbajul Java. Familiarizarea cu acesta o puteți face accesând:
-<a href="http://docs.oracle.com/javase/6/docs/" target="_blank"> http://docs.oracle.com/javase/6/docs/</a></li>
-        <li>Android SDK:<a href="http://developer.android.com/sdk/index.html" target="_blank">http://developer.android.com/sdk/index.html</a></li>
-        <li>OAuth</li>
-        <li>XML</li>
-      </ul>
-
-	  <h3>Cunoștințe necesare</h3>
-	  <ul>
-	    <li>Java elementar</li>
-	    <li>Arhitectură Client-Server</li>
-	    <li>POO (de preferat)</li>
-        <li>Motivație, răbdare pentru a parcurge toate resursele pe care vi le punem la dispoziție</li>
-	  </ul>
-      <h3>Resurse disponibile</h3>
-      <ul>
-        <li><a href="http://developer.android.com/sdk/index.html" target="_blank">http://developer.android.com/sdk/index.html</a></li>
-        <li><a href="http://android.rosedu.org" target="_blank">http://android.rosedu.org</a></li>
-        <li><a href="http://books.google.ro/books?id=2qvjuHseqSMC&printsec=frontcover&hl=ro&source=gbs_ge_summary_r&cad=0#v=onepage&q&f=false" target="_blank">Beginning Android</a></li>
-        <li><a href="http://androidforums.com" target="_blank">http://androidforums.com</a></li>
-      </ul>
-	  <h3>Informații suplimentare</h3>
-	  <ul>
-	    <li>Se poate lucra pe orice platformă OS (Windows, Linux, MAC).</li>
-        <li>Se va folosi ca IDE Eclipse + plugin de Android.</li>
-        <li>Ca și recomandări, instalați SDK-ul de Android și încercați să rulați pe emulator programul inițial “Hello World!”.</li>
-	  </ul>
-
-	  <h3>Responsabili</h3>
-	  <ul>
-           	<li>Gina Dobrescu</li>
-            <li>Bogdan Vlad</li>
-	  </ul>
-      </div> <!-- id="project_awouso_content" -->
-
-	<div class="visualstate" id="project_kreatorjs_content">
-	  <h3>Proiect CDL: kreator.js</h3>
-	  <ul>
-            <li><strong>Development</strong>: <a href=" https://github.com/piatra/kreator.js" target="_blank"> https://github.com/piatra/kreator.js</a></li>
-	    <li><strong>Demo 1</strong>: <a href="http://kreator.herokuapp.com/" target="_blank">http://kreator.herokuapp.com</a></li>
-	    <li><strong>Demo 2</strong>: <a href="http://lab.hakim.se/reveal-js" target="_blank">http://lab.hakim.se/reveal-js</a></li>
-	    <li><strong>Demo 3</strong>: <a href="http://www.rvl.io/" target="_blank">http://www.rvl.io</a></li>
-          </ul>
-
-	  <h3>About</h3>
-	  <p>As HTML5 is getting more and more powerful, more and more people start creating presentations as HTML pages instead of PowerPoint or Keynote. A number of frameworks for HTML presentation have also been created (such as Akim El Hatab's Reveal.js framework). However, as cool as these new presentations are, creating them requires manual coding.</p>
-	  <p>The goal of this project is to create a web-based slide authoring tool to author Reveal.js slides. The UI would let the users edit the content visually, chose transitions for the slides, apply shaders etc</p>
-
-	  <h3>Why this project?</h3>
-	  <ul>
-	    <li>You get to learn and use JavaScript and maybe some Node.js</li>
-	    <li>It’s a fun and interesting project and practical</li>
-	    <li>It doesn’t have to be compatible with IE8</li>
-	    <li>The web is fun</li>
-	  </ul>
-
-	  <h3>Features to implement</h3>
-	  <ul>
-	    <li>Save the presentation state if the user leaves the page without downloading the application</li>
-	    <li>Using 1. you could make a modification stack so that the user could roll back to previous versions (+keybindings CTRL-Z)</li>
-	    <li>Save the presentations online. Easier to share / can be viewed by others</li>
-	    <li>Code refactoring ? Interface improvements</li>
-	    <li>More options for the presentation, different effects for transitions. (see kreator or http://rvl.io)</li>
-	  </ul>
-
-	  <h3>Nice to know</h3>
-	  <ul>
-	    <li>JavaScript</li>
-	    <li>HTML</li>
-	    <li>CSS</li>
-	    <li>Node.js</li>
-	  </ul>
-
-	  <h3>Resources</h3>
-	  <ul>
-	    <li><a href="http://jsforcats.com/" target="_blank">http://jsforcats.com</a></li>
-	    <li><a href="http://www.codecademy.com/" target="_blank">http://www.codecademy.com</a></li>
-	    <li>Contact me at andrei.br92@gmail.com, Andrei@an_rei</li>
-	  </ul>
-
-	  <h3>Mentors</h3>
-	  <ul>
-	    <li>Andrei Oprea</li>
-	  </ul>
-
-	</div> <!--id="project_kreatorjs_content" -->
-
-	<div class="visualstate" id="project_audacious_content">
-	  <h3>Proiect CDL: Audacious</h3>
-
-	  <h3>Descriere</h3>
-	  <p>Un player audio Open-Source, Audacious este un descendent direct al XMMS (read Winamp on Linux) și se ocupă doar de redarea muzicii, fără a consuma resurse pentru alte taskuri. Majoritatea funcționalității extra se obține prin intermediul unor plugin-uri.</p>
-
-	  <h3>TODO</h3>
-	  <ul>
-	    <li>În principiu, vom rezolva bug-uri de la <a href="http://redmine.audacious-media-player.org/projects/audacious/issues" target="_blank">http://redmine.audacious-media-player.org/projects/audacious/issues</a> dar dacă apar idei noi le vom putea implementa. Comunitatea este foarte deschisă.</li>
-	    <li><a href="http://redmine.audacious-media-player.org/issues/238" target="_blank">http://redmine.audacious-media-player.org/issues/238</a></li>
-	    <li><a href="http://redmine.audacious-media-player.org/issues/237" target="_blank">http://redmine.audacious-media-player.org/issues/237</a></li>
-	    <li><a href="http://redmine.audacious-media-player.org/issues/214" target="_blank">http://redmine.audacious-media-player.org/issues/214</a></li>
-	    <li><a href="http://redmine.audacious-media-player.org/issues/190" target="_blank">http://redmine.audacious-media-player.org/issues/190</a></li>
-	    <li><a href="http://redmine.audacious-media-player.org/issues/180" target="_blank">http://redmine.audacious-media-player.org/issues/180</a></li>
-	    <li><a href="http://redmine.audacious-media-player.org/issues/163" target="_blank">http://redmine.audacious-media-player.org/issues/163(check only, există deja un patch dar nu merge complet)</a></li>
-	    <li><a href="http://redmine.audacious-media-player.org/issues/162" target="_blank">http://redmine.audacious-media-player.org/issues/162(de văzut dacă poate fi implementat un workaround pentru limitare)</a></li>
-	    <li><a href="http://redmine.audacious-media-player.org/issues/185" target="_blank">http://redmine.audacious-media-player.org/issues/185</a></li>
-	    <li><a href="http://redmine.audacious-media-player.org/issues/183" target="_blank">http://redmine.audacious-media-player.org/issues/183</a></li>
-	    <li><a href="http://redmine.audacious-media-player.org/issues/10" target="_blank">http://redmine.audacious-media-player.org/issues/10</a></li>
-	    <li><a href="http://redmine.audacious-media-player.org/issues/8" target="_blank">http://redmine.audacious-media-player.org/issues/8</a></li>
-	  </ul>
-
-	  <h3>De ce?</h3>
-	  <ul>
-	    <li>Majoritatea bug-urilor necesită câteva ore pentru înțelegerea codului și puțin design pentru a rezolva câte limitări ale framework-ului</li>
-	    <li>În urma proiectului, cunoștințele de C, coding style și design vor fi îmbunătățite semnificativ</li>
-	    <li>Este singurul player audio GTK care nu face lucruri inutile și este utilizabil</li>
-	  </ul>
-
-	 <h3>Tehnologii Folosite</h3>
-	 <ul>
-	   <li>GTK - majoritatea bugurilor sunt legate de interfață</li>
-	   <li>Encoding MP3, etc.</li>
-   	   <li>Există două repository-uri: unul pentru core app și unul pentru plugins. De fapt, pentru a putea compila de mână tot codul sunt necesare 4 repository-uri cu biblioteci diverse (libguess, libmowgli, libmcs - de la Atheme Project)</li>
-	 </ul>
-
-	 <h3>Necesar</h3>
-	 <ul>
-	   <li>Cunoștințe de C</li>
-	   <li>Cunoștințe de linkare, încare biblioteci, LD_LIBRARY_PATH, etc</li>
-	   <li>Minime cunoștințe Git - se pot învăța pe parcurs dacă nu există</li>
-	 </ul>
-
-	 <h3>Resurse</h3>
-	 <ul>
-	   <li><a href="http://audacious-media-player.org/" target="_blank">http://audacious-media-player.org/</a></li>
-	   <li><a href="http://www.atheme.org/" target="_blank">http://www.atheme.org/</a></li>
-	 </ul>
-
-	 <h3>Responsabili</h3>
-	 <ul>
-	   <li>Mihai Maruseac (mihai at rosedu dot org)</li>
-	 </ul>
-
-	</div> <!--id="project_audacious_content" -->
-
-	<div class="visualstate" id="project_moodle_content">
-	  <h3>Proiect CDL: Moodle</h3>
-
-	  <h3>Descriere</h3>
-	  <p>Moodle este o platformă Open Source pe Internet, folosită pentru ușoara administrare a cursurilor (vezi cs.curs.pub.ro). Printre facilităţile ei, se numără încărcarea de resurse (separate între cursuri) și posibilitatea adăugării de forum pentru fiecare materie.</p>
-
-	 <h3>Ce ne propunem?</h3>
-	 <p>Să vă învățăm lucruri noi, și să îmbunătățim <a href="http://cs.curs.pub.ro" target="_blank">http://cs.curs.pub.ro</a></p>
-
-	 <h3>Task-uri</h3>
-	 <p>Acestea vor fi, în principal, implementate ca noi module pentru proiect:</p>
-	 <ul>
-	   <li>generarea unui orar personalizat pentru fiecare student în funcţie de serie/grupă</li>
-	   <li>în cazul unei postări noi pe un thread în care utilizatorul a participat, să poată să ajungă direct la prima postare necitită de acolo</li>
-	   <li>progress bar pentru termenul limită de predare (upload) al temelor</li>
-	   <li>alte idei care ar putea fi practice</li>
-	 </ul>
-
-	 <h3>Cunoștințe Necesare</h3>
-	 <ul>
-	   <li>PhP (cea mai mare parte)</li>
-	   <li>HTML</li>
-	   <li>MySQL</li>
-	   <li>Javascript</li>
-	   <li>Git</li>
-	 </ul>
-	 <p>Nu este nevoie să stăpâniţi dinainte tehnologiile de mai sus; până la urmă, scopul acestui curs este să învăţaţi ceva nou :)</p>
-
-	 <h3>Resurse</h3>
-	 <ul>
-	   <li><a href="http://xref.schoolsict.net/moodle/2.3/nav.html?index.html" target="_blank">http://xref.schoolsict.net/moodle/2.3/nav.html?index.html</a></li>
-	   <li><a href="https://moodle.org/" target="_blank">https://moodle.org/</a></li>
-	   <li><a href="http://swarm.cs.pub.ro/~mzamfirescu/cdl_2013/books/OReilly.Head.First.HTMLwithCSSXHTML.pdf" target="_blank">http://swarm.cs.pub.ro/~mzamfirescu/cdl_2013/books/OReilly.Head.First.HTMLwithCSSXHTML.pdf</a></li>
-	   <li><a href="http://swarm.cs.pub.ro/~mzamfirescu/cdl_2013/books/OReilly.Learning.PHP.MySQL.and.JavaScript.Jul.2009.pdf" target="_blank">http://swarm.cs.pub.ro/~mzamfirescu/cdl_2013/books/OReilly.Learning.PHP.MySQL.and.JavaScript.Jul.2009.pdf</a></li>
-	 </ul>
-
-	 <h3>Responsabili</h3>
-	 <ul>
-	   <li>Dragoș Badea (badea dot dm at gmail dot com)</li>
-	   <li>Ioan-Mihail Stan (stanioanmihail at gmail dot com)</li>
-	   <li>Mihai Zamfirescu (mihai dot zamfirescu93 at gmail dot com)</li>
-	 </ul>
-
-	</div> <!--id="prject_moodle_content" -->
-
-        <div class="visualstate" id="project_igamebot_content">
-          <h3>Proiect CDL: I, GameBot</h3>
-          <p><strong>Development</strong>: <a href="https://github.com/rosedu/I.GameBot" target="_blank">https://github.com/rosedu/I.GameBot</a></p>
-
-          <h3>Descriere</h3>
-          <p><strong>I, GameBot</strong> își propune să fie o platformă pentru organizarea de concursuri de programare cu codul-sursă la vedere. Majoritatea platformelor existente le permit participanţilor să ţină ascuns algoritmul cu care concurează. Făcând public accesul la algoritmii tuturor participanţilor, "I, GameBot" va scoate în evidenţă dinamica interacţiunilor sociale spontane dintr-un ecosistem free-libre software - mai precis, simbioza dintre colaborare si competiţie.
-          <br>
-          <br>
-          Proiectul îl veţi implementa de la zero urmând cu stricteţe metodologia TDD (Test-Driven Development) și design pattern-ul "Functional Core, Imperative Shell".</p>
-
-          <h3>TODO</h3>
-          <p>
-            <a href="https://github.com/dserban/I.GameBot/issues" target="_blank">Features</a>
-          </p>
-
-          <h3>Cunoștințe necesare</h3>
-          <ul>
-            <li>Ruby - intermediar</li>
-            <li>unit testing - intermediar</li>
-            <li>SQL - elementar</li>
-            <li>bash/GNU/Linux - avansat (experiență cu chroot, named pipes)</li>
-            <li>git - intermediar</li>
-            <li>(opțional) back-end web development</li>
-          </ul>
-
-          <h3>Materiale utile</h3>
-          <p>Citiți/parcurgeți următoarele:</p>
-          <ul>
-            <li>
-              <a href="https://github.com/styleguide/ruby" target="_blank">The Github team's Ruby coding style guide</a>
-            </li>
-            <li>
-              <a href="https://github.com/dserban/WebDevCourseMaterials/blob/master/0-tdd-coding-challenge/README.md" target="_blank">TDD coding challenge</a>
-            </li>
-            <li>
-              <a href="https://github.com/dserban/WebDevCourseMaterials/blob/master/1-intro-to-sql/README.md" target="_blank">Introduction to SQL</a>
-            </li>
-            <li>
-              <a href="http://rubyrogues.com/067-rr-gary-bernhardts-testing-style/" target="_blank">Discussion of the "Functional Core, Imperative Shell" design pattern @ The Ruby Rogues Podcast</a>
-            </li>
-          </ul>
+        <h3>Descriere</h3>
+          <p>GNOME Music este un nou music player dezvoltat de comunitatea GNOME. În momentul de față, aplicația oferă opțiuni precum redarea fișierelor audio sau organizarea fișierelor după artiști. </p>
+          <p>Se dorește dezvoltarea mai multor proprietăți precum redarea colecțiilor online, liste de redare inteligente și multe altele, deci
+         este un proiect excelent pentru un începător pentru că îi oferă șansa de a participa decisiv in dezvoltarea acestuia.</p>
+          <p>Mai multe detalii: <a href="https://wiki.gnome.org/Apps/Music" target="_blank">https://wiki.gnome.org/Apps/Music</a>
+          </br> Tehnologii folosite: Python, PyGtk, Gstreamer, Grilo</p>
 
           <h3>Mentor</h3>
-          <p>Dan Șerban, dserban01 => gmail</p>
-        </div> <!-- id="project_igamebot_content" -->
-
-    <div class="visualstate" id="project_cmusphinx_content">
-    	<h3>Proiect CDL: CMUSphinx</h3>
-		<p><strong>Proiect</strong>: <a href="http://sourceforge.net/projects/cmusphinx/" target="_blank">http://sourceforge.net/projects/cmusphinx/</a></p>
-		<p><strong>Wiki proiect</strong>: <a href="http://cmusphinx.sourceforge.net/wiki/" target="_blank">http://cmusphinx.sourceforge.net/wiki/</a></p>
-		<h3>Descriere</h3>
-	  	<p>CMUSPhinx este unul dintre cele mai bune toolkit-uri de recunoaștere automată a vorbirii, folosită pentru crearea de aplicații bazate pe vorbire. Acest toolkit are un numar mare de programe pentru diferite probleme și aplicații. Acestea sunt:
-			<ul>
-				<li>Pocketsphinx - biblioteca minimală de recunoaștere a vorbirii scrisă în C</li>
-				<li>Sphinxbase - biblioteca de suport pentru PocketSphinx</li>
-				<li>Sphinx4 - recognizer de vorbire ajustabil și modificabil scris în Java</li>
-				<li>CMUclmtk - tool pentru modele de limbă</li>
-				<li>Sphinxtrain - tool pentru antrenarea de modele acustice</li>
-				<li>Sphinx3 - decodor de recunoaștere a vorbirii scris în C</li>
-			</ul>
-		</p>
-		<p>Avantajele folosirii CMUSphinx pentru construirea de aplicații de recunoaștere a limbii:
-			<ul>
-				<li>Algoritmii state-of-the-art pentru recunoașterea eficientă a vorbirii. Tool-urile CMUSphinx poti fi folosite și pe platforme cu puține resurse</li>
-				<li>Design flexibil (!)</li>
-				<li>Concentrare pe dezvoltarea de aplicații practice și nu pe cercetare</li>
-				<li>Suport pentru multe limbi cum ar fi engleza US/UK, franceza, chineza, germana, olandeza, rusa și posibilitatea de a construi modele pentru altele (există un laborator în UPB care se ocupă de modelul limbii române)</li>
-				<li>Licență BSD</li>
-				<li>Dezvoltare activă</li>
-				<li>Comunitate activă</li>
-				<li>Multe tool-uri pentru scopuri similare recunoașterii vorbirii (keywork spotting, alignment, pronunciation evaluation)</li>
-			</ul>
-		</p>
-		<h3>Proiect propus</h3>
-		<h4>Speaker Diarization - SD (separarea vorbirii în funcție de vorbitori)</h4>
-		<p>Acest proiect va fi o îmbunătățire importantă a toolkit-ului. Presupune împărțirea vorbirii în funcție de vorbitori, fără cunoașterea anterioară a numărului total și are aplicații în multe domenii.</p>
-		<p>Pași în realizarea proiectului:
-		<ol>
-		<li>familiarizarea cu teoria implicată în recunoașterea vorbirii</li>
-		<li>familiarizarea cu toolkit-ul CMUSphinx (realizarea unei aplicații de recunoaștere de mici dimensiuni)</li>
-		<li>cercetare de paper-uri care au ca temă SD</li>
-		<li>implementarea unei soluții în cadrul toolkit-ului</li>
-		</ol></p>
-		<p>Pași ulteriori (opționali, dar încurajați):
-		<ul>
-		<li>îmbunătățirea proiectului</li>
-		<li>contribuții în cadrul comunității CMUSphinx</li>
-		<li>aprofundarea temei</li>
-		</ul></p>
-		<p><strong>SD papers</strong>:
-		<ul>
-			<li><a href="https://www.dropbox.com/s/xc1p86gjjzjbaox/speaker_recognition_overview.pdf" target="_blank">https://www.dropbox.com/s/xc1p86gjjzjbaox/speaker_recognition_overview.pdf</a></li>
-			<li><a href="https://www.dropbox.com/s/cm6aoaw8xicbwg9/InTech" target="_blank">https://www.dropbox.com/s/cm6aoaw8xicbwg9/InTech</a></li>
-			<li><a href="A_review_of_recent_advances_in_speaker_diarization_with_bayesian_methods.pdf" target="_blank">A_review_of_recent_advances_in_speaker_diarization_with_bayesian_methods.pdf</a></li>
-		</ul>
-		</p>
-		<h3>Requirements</h3>
-		<ul>
-		<li>cunoștințe de Java (mainly) și/sau C și OOP</li>
-		<li>curaj în fața teoriei stufoase</li>
-		<li>curiozitate</li>
-		<li>cunoștințe de structuri de date</li>
-		</ul>
-		<h3>Beneficii în participare la acest proiect</h3>
-		<ul>
-		<li>cunoștințe privind recunoașterea vorbirii</li>
-		<li>integrarea într-o comunitate open source</li>
-		<li>lucru in echipa</li>
-		<li>dezvoltarea capacității de a citi paper-uri și de a lucra și cu modele matematice și noi structuri de date (Model Markov Ascunse)</li>
-	</ul>
-    </div> <!--id="project_cmusphinx_content" -->
-
-	<div class="visualstate" id="organizer_alexef_content">
-          <h3>Alex Eftimie</h3>
-          <!-- We use JavaScript to load images after all the text has been loaded/displayed, hence the use of src="" below -->
-          <p><img id="alexef_pic" src="" style="float: right; margin-left: 10px;"> Răspunde la cereri pe alex(at)rosedu(dot)org. Folosește și recomandă <a href="http://ubuntu.ro/">Ubuntu</a>. Îi place web-ul. Legendele spun că face widgets. Are și <a href="http://alex.eftimie.ro/" target="_blank">blog</a>, cheamă studenții la <a href="http://planet.cs.pub.ro/" target="_blank">planetă</a> - condiție: să scrie despre Counter Strike.</p>
-        </div> <!-- id="organizer_alexef_content" -->
-
-        <div class="visualstate" id="organizer_mmaruseac_content">
-          <h3>Mihai Maruseac</h3>
-          <p>Warning: info is old, update is planned.</p>
           <ul>
-            <li>Nume complet: Mihai Maruseac</li>
-            <li>Nume scurt: <strong>MM</strong></li>
-            <li>Alint rețea: <strong>mm</strong>, MM, Mithrandir, mmaruseacph2, mmaruseac, pilgrimgray, etc.</li>
-            <li>Aniversare: 15 ianuarie</li>
-            <li>Origine: Suceava, România</li>
-            <li>Interese: FOSS, AI, Linux, Calculatoare, Metode Numerice, Computers, programare, SF/Fantasy Literature, SO, Math, Python, OpenGL, Game Design, Arimaa, Game Programming, companii plăcute, discuții libere, Andromeda, etc.</li>
-            <li>Blog: <a href="http://pilgrimgray.wordpress.com/" target="_blank">pilgrimgray - blogul principal</a></li>
-            <li>Fav quote: <em>All that we have to decide is what we do with the time that is given to us</em></li>
+            <li>Bogdan Ciobanu</li>
           </ul>
-        </div> <!-- id="organizer_mmaruseac_content" -->
+        </div> <!-- id="project_gnomemusic" -->
 
-        <div class="visualstate" id="organizer_andreip_content">
-          <h3>Andrei Petre</h3>
-          <ul>
-            <li>îmi place să aflu lucruri noi</li>
-            <li>interese: linux, programare, AI, bere, FOSS, android, python, respond_to?(:ruby), discuții interesante, algoritmi, plimbări în aer liber, șah ...</li>
-            <li>sper ca într-o zi să învăț și C++</li>
-            <li>un viitor blog probabil <a href="http://swarm.cs.pub.ro/~anpetre/" target="_blank">aici</a></li>
-            <li>contact la p31 andrei #at# gmail #dot# com</li>
-          </ul>
-        </div> <!-- id="organizer_andreip_content" -->
+         <div class="visualstate" id="project_mptracker">
+          <h3>Proiect CDL: MPTracker</h3>
+           <ul>
+          <li><strong>URL</strong>:<a href="http://firenze.grep.ro/" target="_blank">http://firenze.grep.ro/</a></li>
+          <li><strong>Repo and Development</strong>:
+            <a href="https://github.com/mgax/mptracker" target="_blank">https://github.com/mgax/mptracker</a>
+          </li>
+         </ul>
 
-        <div class="visualstate" id="organizer_mihaio_content">
-          <h3>Mihai Oprea</h3>
-          <ul>
-            <li>About: Bachelor & Masters in Computer Science from UPenn, building the next best software development team @ uberVU</li>
-            <li>Interese: Web Development, Product Design, Team Management & Development, Personal Productivity, Online Marketing, Social Psychology</li>
-            <li>Tehnologii curente: Python, Django + Tastypie, Coffeescript, Mozaic, Angular JS, Backbone JS</li>
-            <li>Twitter: mishu21</li>
-            <li>MicroBlog: <a href="http://blog.mihaioprea.com">blog.mihaioprea.com</a></li>
-          </ul>
-        </div> <!-- id="organizer_mihaio_content" -->
+          <h3>Descriere</h3>
+            <p>MPTracker este o aplicație care adună date despre parlamentari făcând scraping pe site-ul cdep.ro. Este scrisă în Python (Flask, SQLAlchemy, PyQuery pentru scraping), cu bază de date PostgreSQL, și un design simplu folosind Twitter Bootstrap. Codul sursă este pe GitHub, unde sunt și tichete (bugs, idei de îmbunătățire).</p>
+            </br>
+            <p>Aplicația este dezvoltată de OpenPolitics.ro (Fundația Median Research Centre), care se ocupă cu studii politice, unde data mining este la mare căutare. MPTracker va avea și un portal public pentru urmărirea activității parlamentarilor.</p>
+            </br>
+            <p>Există un grup de site-uri în acest domeniu (de exemplu hartapoliticii.ro, www.alesiivoteaza.ro) dar prea puțin schimb de informații și resurse comune. Pentru MPTracker, baza de date poate fi descărcată și reutilizată liber, în spiritul Open Data, și sperăm să apară cât mai multe mashup-uri și visualizări pe baza acestor date.</p>
 
-        <div class="visualstate" id="organizer_veaceslavm_content">
-          <h3>Veaceslav Munteanu</h3>
+          <h3>Mentor</h3>
           <ul>
-            <li>Just try and say that I can't do something</li>
-            <li>If you know C you have no class, if you know java you have no friends :)</li>
-            <li>Professional head banger \m/, intermediate guitar player and novice sk8ter</li>
-            <li>Thing that got my attention: C++, Qt, Javascript ... searching</li>
-            <li>Other stuff that I know: C, Java, Bash, HTML, CSS, OpenCL</li>
-            <li>contact la slavuttici #at# gmail #dot# com</li>
+            <li>Alex Morega</li>
           </ul>
-        </div> <!-- id="organizer_veaceslavm_content" -->
+        </div> <!-- id="project_mptracker" -->
+
 
 	<div class="visualstate" id="details_course1_content">
-	  <h2>Cursul 1 - 2 martie 2013</h2>
+	  <h2>Cursul 1 </h2>
 
-	  <h3>WHC:IDE</h3>
+	  <h3>###</h3>
 	  <hr>
 	  <ul>
-	    <li><strong>Autor:</strong> Veaceslav Munteanu</li>
-	    <li><strong>Prezentare:</strong> <a
-          href="store/curs1-whc.pdf">WHC:IDE</a></li>
+	    <li><strong>Autor:</strong> # </li>
+	    <li><strong>Prezentare:</strong> <a href="#">#</a></li>
 	  </ul>
 	  <br>
-
-	  <h3>Firefox Add-ons</h3>
-	  <hr>
-	  <ul>
-	    <li><strong>Autor:</strong> Gabriel Ivănică</li>
-	    <li><strong>Prezentare:</strong> Soon</li>
-	  </ul>
-	  <br>
-
-	  <h3>Dex Online</h3>
-	  <hr>
-	  <ul>
-	    <li><strong>Autor:</strong> Mihai Trifu</li>
-        <li><strong>Prezentare: </strong><a href="store/curs1-dexonline.pdf">DexOnline</a></li>
-	  </ul>
-	  <br>
-
-	  <h3>VMChecker + mozaic.js</h3>
-	  <hr>
-	  <ul>
-	    <li><strong>Autor:</strong> Cosmin Didii, Valentin Goșu, Andrei Ismail, Bogdan Săndulescu</li>
-	    <li><strong>Prezentare:</strong> <a href="store/curs1-vmchecker.pdf">VMChecker + mozaic.js</a></li>
-	  </ul>
-	  <br>
-
-	  <h3>WoUSO on Android</h3>
-	  <hr>
-	  <ul>
-	    <li><strong>Autor:</strong> Gina Dobrescu, Bogdan Vlad</li>
-	    <li><strong>Prezentare:</strong> <a href="store/curs1-awouso.pdf">WoUSO on Android</a></li>
-	  </ul>
-	  <br>
-
-	  <h3>kreator.js</h3>
-	  <hr>
-	  <ul>
-	    <li><strong>Autor:</strong> Andrei Oprea</li>
-	    <li><strong>Prezentare:</strong> <a href="http://piatra.github.com/slides/cdl_intro/#/">kreator.js</a></li>
-	  </ul>
-	  <br>
-
-	  <h3>Audacious</h3>
-	  <hr>
-	  <ul>
-	    <li><strong>Autor:</strong> Mihai Maruseac</li>
-	    <li><strong>Prezentare: </strong><a href="store/curs1-audacious.pdf">Audacious</a></li>
-	  </ul>
-	  <br>
-
-	  <h3>Moodle</h3>
-	  <hr>
-	  <ul>
-	    <li><strong>Autor:</strong> Dragoș Badea, Ioan Stan, Mihai Zamfirescu</li>
-	    <li><strong>Prezentare:</strong> <a href="store/curs1-moodle.pdf">Moodle</a></li>
-	  </ul>
-	  <br>
-
-	  <h3>I, GameBot</h3>
-	  <hr>
-	  <ul>
-	    <li><strong>Autor:</strong> Dan Șerban</li>
-	    <li><strong>Prezentare: </strong><a href="store/curs1-I.GameBot.pdf">I, GameBot</a></li>
-	  </ul>
-	  <br>
-
-	  <h3>CMUSphinx</h3>
-	  <hr>
-	  <ul>
-	    <li><strong>Autor:</strong> Alex Tomescu</li>
-	    <li><strong>Prezentare:</strong> <a href="store/curs1-cmusphinx.pdf">CMUSphinx</a></li>
-	  </ul>
-	  <br>
-
-	  <h3>WoUSO</h3>
-	  <hr>
-	  <ul>
-	    <li><strong>Autor:</strong> Iulian Stana</li>
-	    <li><strong>Prezentare:</strong> <a href="store/curs1-wouso.pdf">WoUSO</a></li>
-	  </ul>
-	</div>
 
 	<div class="visualstate" id="details_course2_content">
-	  <h2>Cursul 2 - 9 martie 2013</h2>
-	  <h3>Open Source Collaborative Tools</h3>
+	  <h2>Cursul 2 </h2>
+	  <h3>#</h3>
 	  <hr>
 	  <ul>
-	    <li><strong>Autor:</strong> Răzvan Deaconescu</li>
-	    <li><strong>Prezentare:</strong> Soon</li>
+	    <li><strong>Autor:</strong> # </li>
+	    <li><strong>Prezentare:</strong> Soon </li>
 	  </ul>
 	  <br>
-	  <h3>Git</h3>
-	  <hr>
-	  <ul>
-	    <li><strong>Autor:</strong> Andrei Petre, Mihai Maruseac</li>
-	    <li><strong>Prezentare:</strong> Soon</li>
-	  </ul>
 	</div>
 
 	<div class="visualstate" id="details_course3_content">
-	  <h2>Cursul 3 - 16 martie 2013</h2>
-	  <h3>Vim</h3>
+	  <h2>Cursul 3 </h2>
+	  <h3>#</h3>
 	  <hr>
 	  <ul>
-	    <li><strong>Autor:</strong> Alexandru Juncu</li>
+	    <li><strong>Autor:</strong> # </li>
 	    <li><strong>Prezentare:</strong> Soon</li>
 	  </ul>
 	  <br>
-	  <h3>POO</h3>
-	  <hr>
-	  <ul>
-	    <li><strong>Autor:</strong> Mihai Bivol, Veaceslav Munteanu</li>
-	    <li><strong>Prezentare:</strong> Soon</li>
-	  </ul>
-	</div>
 
 	<div class="visualstate" id="details_course4_content">
-	  <h2>Cursul 4 - 23 martie 2013</h2>
-	  <h3>Code Readability</h3>
+	  <h2>Cursul 4 </h2>
+	  <h3>#</h3>
 	  <hr>
 	  <ul>
-	    <li><strong>Autor:</strong> Teodora Băluță</li>
-	    <li><strong>Prezentare:</strong> Soon</li>
-	  </ul>
-	  <br>
-	  <h3>JavaScript</h3>
-	  <hr>
-	  <ul>
-	    <li><strong>Autor:</strong> Soon</li>
+	    <li><strong>Autor:</strong> # </li>
 	    <li><strong>Prezentare:</strong> Soon</li>
 	  </ul>
 	</div>
