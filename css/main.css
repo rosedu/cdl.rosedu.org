@@ -188,13 +188,15 @@ a {
 }
 
 .editionbutton {
-  background: url("../images/button.png");
+  background: url("../images/buton.png") no-repeat scroll 0 0 transparent;
   font-weight: bold;
-  height: 120px;
+  font-size: 14pt;
+  height: 201px;
   padding-bottom: 2px;
   margin-right: 20px;
-  width: 120px;
+  width: 200px;
   color: #696969;
+  -webkit-border-radius: 27px;
 }
 
 .editii {
@@ -259,10 +261,10 @@ table {
 }
 
 .textquote {
-  vertical-align: center;
   font-size: 8pt;
   font-style: italic;
-  margin-left: 39%;
+  padding-top: 5px;
+  margin-left: 36.5%;
 }
 
 .textfooter {
