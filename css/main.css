@@ -182,6 +182,28 @@ a {
   background-image: linear-gradient(#7e7e7e, #000000);
 }
 
+.buttonholder {
+  text-align: center;
+  padding-top: 10%;
+}
+
+.editionbutton {
+  background: url("../images/button.png");
+  font-weight: bold;
+  height: 120px;
+  padding-bottom: 2px;
+  margin-right: 20px;
+  width: 120px;
+  color: #696969;
+}
+
+.editii {
+    vertical-align: center;
+    margin-left: 30%;
+    padding-top: 10px;
+}
+ 
+
 table {
   max-width: 100%;
   background-color: transparent;
@@ -236,3 +258,21 @@ table {
   -webkit-justify-content: space-between;
 }
 
+.textquote {
+  vertical-align: center;
+  font-size: 8pt;
+  font-style: italic;
+  margin-left: 39%;
+}
+
+.textfooter {
+  font-size: 10pt;
+  font-style: italic;
+}
+
+#footer {
+  position:absolute;
+  border-top: 1px solid #000000;
+  bottom:5px;
+  width:100%;
+}
