@@ -32,6 +32,14 @@ function navigate(visualstate) {
   history.pushState(css_selector_to_display, "/", base_url + visualstate);
 }
 
+$("#etti").on("click", function(e) {
+    window.location = "http://cdl.rosedu.org/etti/";
+});
+
+$("#extended").on("click", function(e) {
+    window.location = "http://cdl.rosedu.org/extended/";
+});
+
 $(".cdlmenuitem").on("click", function(e) {
   e.preventDefault();
   var target_visualstate = $(this).attr("id");
