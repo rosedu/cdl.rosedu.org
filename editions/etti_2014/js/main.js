@@ -34,6 +34,8 @@ function navigate(visualstate, push) {
   var base_url = window.location.href.split("#")[0];
   if (push) {
     history.pushState(css_selector_to_display, "/", base_url + visualstate);
+  } else {
+    history.replaceState(css_selector_to_display, "/", base_url + visualstate);
   }
 }
 
@@ -57,8 +59,6 @@ $(window).on("popstate", function(event) {
     } else {
       $("#cdl_heading").show();
     }
-  } else {
-    navigate("#acasa", DO_NOT_PUSH_TO_HISTORY);
   }
 });
 
