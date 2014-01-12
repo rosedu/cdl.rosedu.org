@@ -83,15 +83,13 @@ Zepto(function($) {
 
   var all_images = {
     "#cdl_logo":       "images/cdl.png",
-    "#ixia_logo":      "images/ixia.png",
-    "#eaudeweb_logo":  "images/eaudeweb.png",
-    "#google_logo":    "images/google.png",
+    "#rosedu_logo":    "images/rosedu.png",
+//  "#ixia_logo":      "images/ixia.png",
+//  "#eaudeweb_logo":  "images/eaudeweb.png",
+//  "#google_logo":    "images/google.png",
     "#english_logo":   "images/english.png",
     "#arrow_hover":    "images/arrow-hover.png",
-    "#green_gradient": "images/green-gradient.png",
-    "#alexef_pic":     "images/alexef.png",
-	"#vmchecker_1":	   "images/vmchecker_1.png",
-	"#google_logo":	   "images/ixia.png"
+    "#green_gradient": "images/green-gradient.png"
   };
   for (var img_id in all_images) {
     $(img_id).attr("src", all_images[img_id]);
