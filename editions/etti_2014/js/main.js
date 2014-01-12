@@ -1,4 +1,7 @@
-function navigate(visualstate) {
+PUSH_TO_HISTORY        = true
+DO_NOT_PUSH_TO_HISTORY = false
+
+function navigate(visualstate, push) {
   if (visualstate === "#calendar") {
     var o = window.orientation;
     if (o) {
@@ -29,18 +32,20 @@ function navigate(visualstate) {
     document.body.scrollIntoView();
   }
   var base_url = window.location.href.split("#")[0];
-  history.pushState(css_selector_to_display, "/", base_url + visualstate);
+  if (push) {
+    history.pushState(css_selector_to_display, "/", base_url + visualstate);
+  }
 }
 
 $(".cdlmenuitem").on("click", function(e) {
   e.preventDefault();
   var target_visualstate = $(this).attr("id");
-  navigate(target_visualstate);
+  navigate(target_visualstate, PUSH_TO_HISTORY);
 });
 
 $("#menu_header").on("click", function(e) {
   e.preventDefault();
-  navigate("#acasa");
+  navigate("#acasa", PUSH_TO_HISTORY);
 });
 
 $(window).on("popstate", function(event) {
@@ -52,6 +57,8 @@ $(window).on("popstate", function(event) {
     } else {
       $("#cdl_heading").show();
     }
+  } else {
+    navigate("#acasa", DO_NOT_PUSH_TO_HISTORY);
   }
 });
 
@@ -69,9 +76,9 @@ $(window).on("orientationchange", function(event) {
 Zepto(function($) {
   var visualstate = "#" + window.location.href.split("#")[1];
   if ( $(visualstate + "_content")[0] ) {
-    navigate(visualstate);
+    navigate(visualstate, DO_NOT_PUSH_TO_HISTORY);
   } else {
-    navigate("#acasa");
+    navigate("#acasa", DO_NOT_PUSH_TO_HISTORY);
   }
 
   var all_images = {
