@@ -1,4 +1,7 @@
-function navigate(visualstate) {
+PUSH_TO_HISTORY        = true
+DO_NOT_PUSH_TO_HISTORY = false
+
+function navigate(visualstate, push) {
   if (visualstate === "#calendar") {
     var o = window.orientation;
     if (o) {
@@ -29,18 +32,22 @@ function navigate(visualstate) {
     document.body.scrollIntoView();
   }
   var base_url = window.location.href.split("#")[0];
-  history.pushState(css_selector_to_display, "/", base_url + visualstate);
+  if (push) {
+    history.pushState(css_selector_to_display, "/", base_url + visualstate);
+  } else {
+    history.replaceState(css_selector_to_display, "/", base_url + visualstate);
+  }
 }
 
 $(".cdlmenuitem").on("click", function(e) {
   e.preventDefault();
   var target_visualstate = $(this).attr("id");
-  navigate(target_visualstate);
+  navigate(target_visualstate, PUSH_TO_HISTORY);
 });
 
 $("#menu_header").on("click", function(e) {
   e.preventDefault();
-  navigate("#acasa");
+  navigate("#acasa", PUSH_TO_HISTORY);
 });
 
 $(window).on("popstate", function(event) {
@@ -69,22 +76,20 @@ $(window).on("orientationchange", function(event) {
 Zepto(function($) {
   var visualstate = "#" + window.location.href.split("#")[1];
   if ( $(visualstate + "_content")[0] ) {
-    navigate(visualstate);
+    navigate(visualstate, DO_NOT_PUSH_TO_HISTORY);
   } else {
-    navigate("#acasa");
+    navigate("#acasa", DO_NOT_PUSH_TO_HISTORY);
   }
 
   var all_images = {
     "#cdl_logo":       "images/cdl.png",
-    "#ixia_logo":      "images/ixia.png",
-    "#eaudeweb_logo":  "images/eaudeweb.png",
-    "#google_logo":    "images/google.png",
+    "#rosedu_logo":    "images/rosedu.png",
+//  "#ixia_logo":      "images/ixia.png",
+//  "#eaudeweb_logo":  "images/eaudeweb.png",
+//  "#google_logo":    "images/google.png",
     "#english_logo":   "images/english.png",
     "#arrow_hover":    "images/arrow-hover.png",
-    "#green_gradient": "images/green-gradient.png",
-    "#alexef_pic":     "images/alexef.png",
-	"#vmchecker_1":	   "images/vmchecker_1.png",
-	"#google_logo":	   "images/ixia.png"
+    "#green_gradient": "images/green-gradient.png"
   };
   for (var img_id in all_images) {
     $(img_id).attr("src", all_images[img_id]);
