@@ -22,6 +22,7 @@ a {
 
 .editionbutton {
   background: url("../images/buton.png") no-repeat scroll 0 0 transparent;
+  cursor: pointer;
   font-weight: bold;
   font-size: 14pt;
   height: 201px;
