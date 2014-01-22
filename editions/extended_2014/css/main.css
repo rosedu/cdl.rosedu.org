@@ -6,13 +6,11 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'OpenSansRegular', Arial, sans-serif;
-  text-align: center;
-  padding-top: 10%;
-  color: #0b8f5a;
+  color: #326fc9;
 }
 
 h4 {
-  font-size: 20pt;
+  font-size: 16px;
 }
 
 strong {
@@ -25,9 +23,9 @@ em {
 }
 
 a {
-  font-size: 20pt;
+  font-size: 15px;
   line-height: 21px;
-  color: #0b8f5a;
+  color: #326fc9;
 }
 
 .extra_buttons {
@@ -95,14 +93,14 @@ a {
               padding-bottom: 7px; } }
           .wrapper #menu_wrapper ul li a:hover, .wrapper #menu_wrapper ul li a.highlight {
             background-color: #69b373;
-            background-image: url("../images/arrow-hover.png"), url("../images/green-gradient.png");
+            background-image: url("../images/arrow-hover.png"), url("../images/blue-gradient.png");
             background-repeat: no-repeat, repeat-x;
             background-position: right center, left bottom;
             color: white;
             border-top-color: #69b373; }
           .wrapper #menu_wrapper ul li a:active {
             background-color: #69b373;
-            background-image: url("../images/arrow-hover.png"), url("../images/green-gradient.png");
+            background-image: url("../images/arrow-hover.png"), url("../images/blue-gradient.png");
             background-repeat: no-repeat, repeat-x;
             background-position: right center, left top; }
         .wrapper #menu_wrapper ul li:first-child a {
