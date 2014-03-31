@@ -87,7 +87,8 @@ Zepto(function($) {
   	"#google_logo":	   "images/ixia.png",
     "#rosedu_logo":    "images/rosedu.png",
     "#intel_logo":     "images/intSFT_rgb.png",
-    "#ixia_logo": "images/Ixia_logo_2013.png"
+    "#ixia_logo":      "images/Ixia_logo_2013.png",
+    "#github_logo":    "images/GitHub_Logo.png"
   };
   for (var img_id in all_images) {
     $(img_id).attr("src", all_images[img_id]);
