@@ -84,13 +84,11 @@ Zepto(function($) {
   var all_images = {
     "#cdl_logo":       "images/cdl.png",
     "#rosedu_logo":    "images/rosedu.png",
-//  "#ixia_logo":      "images/ixia.png",
-//  "#eaudeweb_logo":  "images/eaudeweb.png",
-//  "#google_logo":    "images/google.png",
     "#english_logo":   "images/english.png",
     "#arrow_hover":    "images/arrow-hover.png",
     "#green_gradient": "images/green-gradient.png",
-    "#ixia_logo": "images/Ixia_logo_2013.png"
+    "#ixia_logo":      "images/Ixia_logo_2013.png",
+    "#github_logo":    "images/GitHub_Logo.png"
   };
   for (var img_id in all_images) {
     $(img_id).attr("src", all_images[img_id]);
