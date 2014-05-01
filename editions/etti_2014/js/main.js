@@ -83,10 +83,9 @@ Zepto(function($) {
 
   var all_images = {
     "#cdl_logo":       "images/cdl.png",
-    "#rosedu_logo":    "images/rosedu.png",
-//  "#ixia_logo":      "images/ixia.png",
-//  "#eaudeweb_logo":  "images/eaudeweb.png",
-//  "#google_logo":    "images/google.png",
+//  "#rosedu_logo":    "images/logos/rosedu.png",
+    "#ixia_logo":      "images/logos/ixia_logo.png",
+    "#github_logo":    "images/logos/github_logo.png",
     "#english_logo":   "images/english.png",
     "#arrow_hover":    "images/arrow-hover.png",
     "#green_gradient": "images/green-gradient.png"

@@ -236,3 +236,12 @@ table {
   -webkit-justify-content: space-between;
 }
 
+.sponsor_logo_td {
+  padding: 15px;
+  vertical-align: top;
+}
+
+.sponsor_copy_td {
+  vertical-align: top;
+}
+
