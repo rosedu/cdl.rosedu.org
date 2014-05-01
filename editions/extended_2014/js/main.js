@@ -76,19 +76,15 @@ Zepto(function($) {
 
   var all_images = {
     "#cdl_logo":       "images/cdl.png",
-    "#eaudeweb_logo":  "images/eau-de-web-logo1.png",
-    "#google_logo":    "images/google.png",
+//  "#rosedu_logo":    "images/logos/rosedu.png",
+    "#intel_logo":     "images/logos/intel_logo.png",
+    "#ixia_logo":      "images/logos/ixia_logo.png",
+    "#eaudeweb_logo":  "images/logos/eaudeweb_logo.png",
+    "#github_logo":    "images/logos/github_logo.png",
     "#english_logo":   "images/english.png",
     "#arrow_hover":    "images/arrow-hover.png",
     "#green_gradient": "images/green-gradient.png",
-    "#blue_gradient":  "images/blue-gradient.png",
-    "#alexef_pic":     "images/alexef.png",
-  	"#vmchecker_1":	   "images/vmchecker_1.png",
-  	"#google_logo":	   "images/ixia.png",
-    "#rosedu_logo":    "images/rosedu.png",
-    "#intel_logo":     "images/intSFT_rgb.png",
-    "#ixia_logo":      "images/Ixia_logo_2013.png",
-    "#github_logo":    "images/GitHub_Logo.png"
+    "#blue_gradient":  "images/blue-gradient.png"
   };
   for (var img_id in all_images) {
     $(img_id).attr("src", all_images[img_id]);

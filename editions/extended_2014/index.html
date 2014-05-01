@@ -26,30 +26,19 @@
         <div id="menu">
           <ul style="font-family: 'OpenSansRegular';">
             <li class="cdlmenuitem" id="#acasa">        <a href="#acasa">Acasă</a>               </li>
-            <li class="cdlmenuitem" id="#cursuri">      <a href="#cursuri">Workshop-uri</a>           </li>
-            <li class="cdlmenuitem" id="#proiecte">     <a href="#proiecte">Hackatoane</a>         </li>
+            <li class="cdlmenuitem" id="#cursuri">      <a href="#cursuri">Cursuri</a>           </li>
             <li class="cdlmenuitem" id="#calendar">     <a href="#calendar">Calendar</a>         </li>
             <li class="cdlmenuitem" id="#inscriere">    <a href="#inscriere">Inscriere</a>       </li>
 
             <li><a href="http://cdl.rosedu.org/blog/" target="_blank">Blog</a></li>
 
             <li class="cdlmenuitem" id="#meta">         <a href="#meta">Despre</a>               </li>
-<!--
             <li class="cdlmenuitem" id="#sponsori">     <a href="#sponsori">Sponsori</a>         </li>
--->
             <li class="cdlmenuitem" id="#english">      <a href="#english">English</a>           </li>
           </ul>
-          <h3 align="center"><strong>Sponsori</strong></h3>
-          <!-- We use JavaScript to load images after all the text has been loaded/displayed, hence the use of src="" below -->
-          <div class="sponsori">
-            <a href="http://www.intel.com/"><img id="intel_logo" src="" style="max-width: 30%;"></a>
-            <a href="http://www.ixiacom.com/" target="_blank"><img id="ixia_logo" src="" style="max-width: 30%; padding-left: 60px; padding-bottom:15px;"></a>
-            <br>
-            <a href="http://www.eaudeweb.ro/" target="_blank"><img id="eaudeweb_logo" src="" style="max-width: 50%;"></a>
-            <a href="http://www.github.com/" target="_blank"><img id="github_logo" src="" style="max-width: 40%;"></a>
-          </div>
         </div> <!-- id="menu" -->
       </div> <!-- id="menu_wrapper" -->
+
       <div class="main span8 offset1">
         <h2 id="cdl_heading" style="margin-bottom: 20px;">Cursul de Dezvoltare Liberă v7</h2>
         <span id="top_of_content"></span>
@@ -77,13 +66,17 @@
           </table>
         </div> <!-- id="cursanti_content" -->
         <div class="visualstate" id="cursuri_content">
-          <h3><br>To be announced!</h3>
+          <h3>Curs 1</h3>
+          <ul>
+            <li> E-mail [<a href="http://cdl.rosedu.org/store/pdf/cdl_2014-primavara_e-mail.pdf" target="_blank">link</a>]</li>
+            <li> Git Workshop [<a href="https://docs.google.com/presentation/d/1OLK6hvGmrq-XnMZ_ZZozcTG7Yn-DOXz7mcfWzoSFqp0/edit?usp=sharing" target="_blank">link</a>]</li>
+          </ul>
         </div> <!-- id="cursuri_content" -->
 
         <div class="visualstate" id="calendar_content">
           <h3>Calendar</h3>
           <!-- We use JavaScript to load the iframe after all the text has been loaded/displayed, hence the use of src="" below -->
-          <iframe src="https://www.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=rosedu.org_t9eb762676p055ickisp5hncao%40group.calendar.google.com&amp;color=%23333333&amp;ctz=Europe%2FBucharest" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
+          <iframe src="https://www.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=apve67v2o1l4tp1655sl53nhs8%40group.calendar.google.com&amp;color=%23333333&amp;ctz=Europe%2FBucharest" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
         </div> <!-- id="calendar_content" -->
 
         <div class="visualstate" id="proiecte_content">
@@ -110,13 +103,50 @@
           <p>Pentru informații suplimentare, te așteptăm pe <a href="http://lists.rosedu.org/listinfo/rosedu-general" target="_blank">lista generală a ROSEdu</a> sau pe <a href="irc://irc.freenode.net"> canalul IRC #rosedu</a>.</p>
         </div> <!-- id="meta_content" -->
 
-<!--
-        <div class="visualstate" id="sponsori_content">
-            <h3>CDL este sponsorizat de:</h3>
-            <h3> Google </h3>
-          <p><a href="http://www.google.com/about" target="_blank"><img id="google-logo" src="images/google.png"></a></p>
-        </div> --><!-- id="sponsori_content"
--->
+        <div id="sponsori_content" class="visualstate">
+          <table>
+            <tr>
+              <td class="sponsor_logo_td">
+                <!-- We use JavaScript to load images after all the text has been loaded/displayed, hence the use of src="" below -->
+                <a href="https://software.intel.com/" target="_blank"><img id="intel_logo" style="max-width: 232px;" src=""></a>
+              </td>
+              <td class="sponsor_copy_td">
+                <p><strong>Sponsor: Intel Software</strong></p>
+                <p><a href="https://software.intel.com/" target="_blank">https://software.intel.com/</a></p>
+              </td>
+            </tr>
+            <tr>
+              <td class="sponsor_logo_td">
+                <!-- We use JavaScript to load images after all the text has been loaded/displayed, hence the use of src="" below -->
+                <a href="http://www.ixiacom.com/" target="_blank"><img id="ixia_logo" style="max-width: 232px;" src=""></a>
+              </td>
+              <td class="sponsor_copy_td">
+                <p><strong>Sponsor: Ixia</strong></p>
+                <p><a href="http://www.ixiacom.com/" target="_blank">http://www.ixiacom.com/</a></p>
+              </td>
+            </tr>
+            <tr>
+              <td class="sponsor_logo_td">
+                <!-- We use JavaScript to load images after all the text has been loaded/displayed, hence the use of src="" below -->
+                <a href="http://www.eaudeweb.ro/" target="_blank"><img id="eaudeweb_logo" style="max-width: 210px;" src=""></a>
+              </td>
+              <td class="sponsor_copy_td">
+                <p><strong>Sponsor: Eau de Web</strong></p>
+                <p><a href="http://www.eaudeweb.ro/" target="_blank">http://www.eaudeweb.ro/</a></p>
+              </td>
+            </tr>
+            <tr>
+              <td class="sponsor_logo_td">
+                <!-- We use JavaScript to load images after all the text has been loaded/displayed, hence the use of src="" below -->
+                <a href="https://github.com/" target="_blank"><img id="github_logo" style="max-width: 210px;" src=""></a>
+              </td>
+              <td class="sponsor_copy_td">
+                <p><strong>Sponsor: GitHub</strong></p>
+                <p><a href="https://github.com/" target="_blank">https://github.com/</a></p>
+              </td>
+            </tr>
+          </table>
+        </div> <!-- id="sponsori_content" -->
 
         <div class="visualstate" id="english_content">
           <h3>What is CDL all about?</h3>
@@ -138,21 +168,6 @@
             <li><em>Development sessions</em> under the guidance of experienced mentors to help students work on specific features of an open source project</li>
             <li><em>Presentations</em> held by invited guests, industry leaders of the Romanian IT community with various topics (careers in software engineering, startups, technology).</li>
           </ul>
-
-    <h3>CDL v1.0 @ unibuc</h3>
-      <p>In the fall of 2013 we had our first CDL at the University of Bucharest. The Google Ambassador's Team from the University of Bucharest,
-      and ROSEdu shared the love for open source with 12 students, which contributed to 4 projects.</p>
-      <p>The projects were: GNOME Music Player, MonoDevelop, ROSEdu People and MPTracker.</p>
-      <p>The weekly workshops were held by students from both universities, and covered areas like: Git and GitHub, Linux, Python, Django, Flask.</p>
-      <p>Thanks to Google's support, we’ve shared swag and drinks with our colleagues.</p>
-
-    <h3>CDL v6.0</h3>
-      <p>The sixth edition of CDL is over!</p>
-      <p>More and more people are willing to help us so we had twice as many projects as in prevous editions. Because more projects means more students in v6 we worked with 20 students splitted in two teams based on their project theme (web and non web). Students worked on their projects assisted by one or two mentors attended tehnical and non thenical presentations(git, functional programming, how to build your own start up).</p>
-      <p>The projects we had were WHC:IDE, Firefox Add-ons, DexOnline, vmchecker, WoUSO on Android, kreator.js, Audacious, Moodle, I GameBot, CMUSphinx and World of USO. Most of students' contibutions are now in upstream.</p>
-      <p>We can tell that CDL reached its goal because most of our students applied and were accepted at Google Summer of Code or ROSEdu Summer of code. Also, the winner of the <a href="http://uc.rosedu.org/en/#acasa" traget="_blank">Upstream Challenge (first year track)</a> was working on vmchecker project.</p>
-      <p>Special thanks to UberVU who offered mentorship for vmchecker project and to Ixia for a very fun laser tag night.</p>
-
     <h3>CDL v5.0</h3>
     <p>Another CDL edition is over!</p>
     <p>We had the lucky 13 number of participants. All the students worked on their projects, and at first some didn’t know what to expect of the project. They received constant support from their mentors, had hackathons, technical presentations (git, vim, python, gsoc opportunities and more), and also soft skills presentations (about leadership, innovation, open source etc.). According to the students’ feedback,  most of their expectations were greatly exceeded.</p>
