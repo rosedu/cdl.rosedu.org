@@ -1,3 +1,6 @@
+// This program is licensed under the CC-BY-NC license (with clarifications)
+// For details, please refer to the file main_js.license.md
+
 function navigate(visualstate) {
   if (visualstate === "#calendar") {
     var o = window.orientation;
